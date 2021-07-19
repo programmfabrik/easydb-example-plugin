@@ -1,7 +1,7 @@
 plugin:
-  name: example-plugin
+  name: easydb-example-plugin
   version: 1.0
-  url: https://github.com/programmfabrik/easydb-plugin-examples
+  url: https://github.com/programmfabrik/easydb-example-plugin
   displayname:
     de-DE: Example Plugin
     en-US: Example Plugin

@@ -26,7 +26,7 @@ class ExampleRootApp extends RootMenuApp
 	load: ->
 		super()
 
-		@__plugin = ez5.pluginManager.getPlugin("example-plugin")
+		@__plugin = ez5.pluginManager.getPlugin("easydb-example-plugin")
 		console.debug "plugin:", @__plugin
 
 		@__plugin_url = @__plugin.getPluginURL()
