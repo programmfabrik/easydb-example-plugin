@@ -1,5 +1,5 @@
 plugin:
-  name: easydb-example-plugin
+  name: example-plugin
   version: 1.0
   url: https://github.com/programmfabrik/easydb-example-plugin
   displayname:
