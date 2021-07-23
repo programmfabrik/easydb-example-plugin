@@ -10,6 +10,7 @@ INSTALL_FILES = \
 	build/node_modules \
 	build/update/example-update.js \
 	build/webhooks/example.js \
+	src/server/example.py \
 	example-plugin.config.yml
 
 # XXX: unavailable languages
