@@ -8,6 +8,8 @@ INSTALL_FILES = \
 	$(CSS) \
 	$(WEB)/example-plugin.js \
 	build/node_modules \
+	build/update/example-update.js \
+	build/webhooks/example.js \
 	example-plugin.config.yml
 
 # XXX: unavailable languages
