@@ -1,4 +1,5 @@
 PLUGIN_NAME = example-plugin
+PLUGIN_PATH = easydb-example-plugin
 
 INSTALL_FILES = \
 	$(WEB)/l10n/cultures.json \
