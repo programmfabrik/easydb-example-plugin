@@ -11,7 +11,7 @@ INSTALL_FILES = \
 	build/update/example-update.js \
 	build/webhooks/example.js \
 	src/server/example.py \
-	example-plugin.config.yml
+	manifest.yml
 
 # XXX: unavailable languages
 #	$(WEB)/l10n/es-ES.json \
