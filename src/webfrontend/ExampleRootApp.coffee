@@ -76,9 +76,12 @@ class ExampleRootApp extends RootMenuApp
 		CUI.resolvedPromise()
 
 	showBaseConfig: ->
+		baseConfig = ez5.session.getBaseConfig()
+		baseConfig = baseConfig.system or baseConfig # TODO: Remove this after #64076 is merged.
+
 		od = new CUI.ObjectDumper
 			parse_json: true
-			object: ez5.session.getBaseConfig().system.example_plugin
+			object: baseConfig.example_plugin
 
 		@__hl.replace(od, "center")
 
