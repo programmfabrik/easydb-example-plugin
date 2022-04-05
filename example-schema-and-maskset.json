@@ -1,0 +1,2313 @@
+{
+    "schema": {
+        "type": "user",
+        "version": 1,
+        "based_on_base_version": 260,
+        "max_table_id": 10,
+        "max_column_id": 22,
+        "tables": [
+            {
+                "name": "example",
+                "table_id": 1,
+                "pool_link": true,
+                "acl_table": false,
+                "has_tags": false,
+                "is_hierarchical": true,
+                "in_main_search": true,
+                "columns": [
+                    {
+                        "kind": "column",
+                        "name": "file",
+                        "type": "eas",
+                        "not_null": false,
+                        "column_id": 1
+                    },
+                    {
+                        "kind": "column",
+                        "name": "field",
+                        "type": "text_oneline",
+                        "not_null": false,
+                        "column_id": 2
+                    },
+                    {
+                        "other_table_id": 2,
+                        "other_table_name_hint": "example__keywords",
+                        "not_null": false,
+                        "kind": "link"
+                    },
+                    {
+                        "kind": "column",
+                        "name": "example_slider",
+                        "type": "custom:base.example-plugin.slider",
+                        "not_null": false,
+                        "column_id": 3
+                    }
+                ],
+                "unique_keys": [],
+                "foreign_keys": []
+            },
+            {
+                "name": "example__keywords",
+                "table_id": 2,
+                "owned_by": {
+                    "other_table_id": 1,
+                    "other_table_name_hint": "example"
+                },
+                "columns": [
+                    {
+                        "kind": "column",
+                        "name": "keyword",
+                        "type": "link",
+                        "not_null": false,
+                        "column_id": 4
+                    }
+                ],
+                "unique_keys": [],
+                "foreign_keys": [
+                    {
+                        "name": "example__keywords__keyword__keyword_fkey",
+                        "on_delete": "restrict",
+                        "on_update": "cascade",
+                        "columns": [
+                            {
+                                "column_id": 4,
+                                "column_name_hint": "keyword"
+                            }
+                        ],
+                        "referenced_table": {
+                            "table_id": 8,
+                            "name_hint": "keyword",
+                            "columns": [
+                                {
+                                    "auto_column_primary_key": true
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "medienart",
+                "table_id": 3,
+                "pool_link": false,
+                "acl_table": false,
+                "has_tags": false,
+                "is_hierarchical": false,
+                "in_main_search": false,
+                "columns": [
+                    {
+                        "kind": "column",
+                        "name": "name",
+                        "type": "text_l10n_oneline",
+                        "not_null": true,
+                        "column_id": 5
+                    }
+                ],
+                "unique_keys": [
+                    {
+                        "name": "medienart__name_unique",
+                        "columns": [
+                            {
+                                "column_id": 5,
+                                "column_name_hint": "name"
+                            }
+                        ]
+                    }
+                ],
+                "foreign_keys": []
+            },
+            {
+                "name": "medium",
+                "table_id": 4,
+                "pool_link": false,
+                "acl_table": false,
+                "has_tags": false,
+                "is_hierarchical": false,
+                "in_main_search": true,
+                "columns": [
+                    {
+                        "kind": "column",
+                        "name": "titel",
+                        "type": "text_oneline",
+                        "not_null": false,
+                        "column_id": 21,
+                        "reverse_edit": false
+                    },
+                    {
+                        "kind": "column",
+                        "name": "identifier",
+                        "type": "string",
+                        "not_null": false,
+                        "column_id": 6,
+                        "reverse_edit": false
+                    },
+                    {
+                        "kind": "column",
+                        "name": "ablaufdatum",
+                        "type": "date",
+                        "not_null": false,
+                        "column_id": 22,
+                        "reverse_edit": false
+                    },
+                    {
+                        "kind": "column",
+                        "name": "medienart",
+                        "type": "link",
+                        "not_null": false,
+                        "column_id": 7,
+                        "reverse_edit": false
+                    },
+                    {
+                        "kind": "column",
+                        "name": "spieldauer_min",
+                        "type": "integer.2",
+                        "not_null": false,
+                        "column_id": 8,
+                        "reverse_edit": false
+                    },
+                    {
+                        "kind": "column",
+                        "name": "spieldauer",
+                        "type": "string",
+                        "not_null": false,
+                        "column_id": 9,
+                        "reverse_edit": false
+                    },
+                    {
+                        "kind": "column",
+                        "name": "seitenzahl",
+                        "type": "number",
+                        "not_null": false,
+                        "column_id": 10,
+                        "reverse_edit": false
+                    }
+                ],
+                "unique_keys": [
+                    {
+                        "name": "medium__identifier_unique",
+                        "columns": [
+                            {
+                                "column_id": 6,
+                                "column_name_hint": "identifier"
+                            }
+                        ]
+                    }
+                ],
+                "foreign_keys": [
+                    {
+                        "name": "medium__medienart__medienart_fkey",
+                        "on_delete": "restrict",
+                        "on_update": "cascade",
+                        "columns": [
+                            {
+                                "column_id": 7,
+                                "column_name_hint": "medienart"
+                            }
+                        ],
+                        "referenced_table": {
+                            "table_id": 3,
+                            "name_hint": "medienart",
+                            "columns": [
+                                {
+                                    "auto_column_primary_key": true
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "object",
+                "table_id": 5,
+                "pool_link": false,
+                "acl_table": false,
+                "has_tags": false,
+                "is_hierarchical": false,
+                "in_main_search": false,
+                "columns": [
+                    {
+                        "kind": "column",
+                        "name": "name",
+                        "type": "text_oneline",
+                        "not_null": false,
+                        "column_id": 11
+                    },
+                    {
+                        "other_table_id": 6,
+                        "other_table_name_hint": "object__related_objects",
+                        "not_null": false,
+                        "kind": "link"
+                    }
+                ],
+                "unique_keys": [],
+                "foreign_keys": []
+            },
+            {
+                "name": "object__related_objects",
+                "table_id": 6,
+                "owned_by": {
+                    "other_table_id": 5,
+                    "other_table_name_hint": "object"
+                },
+                "columns": [
+                    {
+                        "kind": "column",
+                        "name": "lk_object_id",
+                        "type": "link",
+                        "not_null": false,
+                        "column_id": 12
+                    },
+                    {
+                        "kind": "column",
+                        "name": "lk_relation_id",
+                        "type": "link",
+                        "not_null": false,
+                        "column_id": 13
+                    }
+                ],
+                "unique_keys": [],
+                "foreign_keys": [
+                    {
+                        "name": "object__related_objects__lk_object_id__object_fkey",
+                        "on_delete": "restrict",
+                        "on_update": "cascade",
+                        "columns": [
+                            {
+                                "column_id": 12,
+                                "column_name_hint": "lk_object_id"
+                            }
+                        ],
+                        "referenced_table": {
+                            "table_id": 5,
+                            "name_hint": "object",
+                            "columns": [
+                                {
+                                    "auto_column_primary_key": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "object__related_objects__lk_relation_id__relation_fkey",
+                        "on_delete": "restrict",
+                        "on_update": "cascade",
+                        "columns": [
+                            {
+                                "column_id": 13,
+                                "column_name_hint": "lk_relation_id"
+                            }
+                        ],
+                        "referenced_table": {
+                            "table_id": 7,
+                            "name_hint": "relation",
+                            "columns": [
+                                {
+                                    "auto_column_primary_key": true
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "relation",
+                "table_id": 7,
+                "pool_link": false,
+                "acl_table": false,
+                "has_tags": false,
+                "is_hierarchical": false,
+                "in_main_search": false,
+                "columns": [
+                    {
+                        "kind": "column",
+                        "name": "relation",
+                        "type": "text_oneline",
+                        "not_null": false,
+                        "column_id": 14
+                    },
+                    {
+                        "kind": "column",
+                        "name": "reverse_relation",
+                        "type": "link",
+                        "not_null": false,
+                        "column_id": 15
+                    }
+                ],
+                "unique_keys": [],
+                "foreign_keys": [
+                    {
+                        "name": "relation__reverse_relation__relation_fkey",
+                        "on_delete": "restrict",
+                        "on_update": "cascade",
+                        "columns": [
+                            {
+                                "column_id": 15,
+                                "column_name_hint": "reverse_relation"
+                            }
+                        ],
+                        "referenced_table": {
+                            "table_id": 7,
+                            "name_hint": "relation",
+                            "columns": [
+                                {
+                                    "auto_column_primary_key": true
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "keyword",
+                "table_id": 8,
+                "pool_link": false,
+                "acl_table": false,
+                "has_tags": false,
+                "is_hierarchical": false,
+                "in_main_search": false,
+                "columns": [
+                    {
+                        "kind": "column",
+                        "name": "name",
+                        "type": "text_oneline",
+                        "not_null": false,
+                        "column_id": 16
+                    }
+                ],
+                "unique_keys": [],
+                "foreign_keys": []
+            },
+            {
+                "name": "subject",
+                "table_id": 9,
+                "pool_link": false,
+                "acl_table": false,
+                "has_tags": false,
+                "is_hierarchical": false,
+                "in_main_search": false,
+                "columns": [
+                    {
+                        "kind": "column",
+                        "name": "subject",
+                        "type": "text_oneline",
+                        "not_null": false,
+                        "column_id": 17
+                    }
+                ],
+                "unique_keys": [],
+                "foreign_keys": []
+            },
+            {
+                "name": "term",
+                "table_id": 10,
+                "pool_link": false,
+                "acl_table": false,
+                "has_tags": false,
+                "is_hierarchical": false,
+                "in_main_search": false,
+                "columns": [
+                    {
+                        "kind": "column",
+                        "name": "term",
+                        "type": "text_oneline",
+                        "not_null": false,
+                        "column_id": 18
+                    },
+                    {
+                        "kind": "column",
+                        "name": "lk_subject_id",
+                        "type": "link",
+                        "not_null": false,
+                        "column_id": 19
+                    },
+                    {
+                        "kind": "column",
+                        "name": "description",
+                        "type": "text",
+                        "not_null": false,
+                        "column_id": 20
+                    }
+                ],
+                "unique_keys": [],
+                "foreign_keys": [
+                    {
+                        "name": "term__lk_subject_id__subject_fkey",
+                        "on_delete": "restrict",
+                        "on_update": "cascade",
+                        "columns": [
+                            {
+                                "column_id": 19,
+                                "column_name_hint": "lk_subject_id"
+                            }
+                        ],
+                        "referenced_table": {
+                            "table_id": 9,
+                            "name_hint": "subject",
+                            "columns": [
+                                {
+                                    "auto_column_primary_key": true
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "l10n_languages": []
+    },
+    "mask": {
+        "type": "user",
+        "version": 1,
+        "based_on_schema_version": 1,
+        "max_mask_id": 9,
+        "masks": [
+            {
+                "name": "example__all_fields",
+                "mask_id": 1,
+                "table_id": 1,
+                "table_name_hint": "example",
+                "is_preferred": true,
+                "hide_in_editor": false,
+                "hide_in_detail": false,
+                "hide_in_print_dialog": false,
+                "comment": "",
+                "system_fields": {
+                    "parent": {
+                        "inline": "standard",
+                        "mask_id": "SAME",
+                        "output": {
+                            "mode": "show"
+                        },
+                        "edit": {
+                            "mode": "edit"
+                        }
+                    },
+                    "object_id": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "tags": {
+                        "output": {
+                            "mode": "show"
+                        },
+                        "edit": {
+                            "mode": "edit"
+                        }
+                    },
+                    "acl": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "owner": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "pool": {
+                        "output": {
+                            "mode": "show"
+                        }
+                    },
+                    "collections": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "publish": {
+                        "output": {
+                            "mode": "off"
+                        }
+                    }
+                },
+                "fields": [
+                    {
+                        "kind": "field",
+                        "column_name_hint": "file",
+                        "column_id": 1,
+                        "edit": {
+                            "mode": "edit",
+                            "group_edit": true
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": false,
+                            "table": false,
+                            "standard": {
+                                "format": "comma"
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": true,
+                            "nested": true
+                        }
+                    },
+                    {
+                        "kind": "field",
+                        "column_name_hint": "field",
+                        "column_id": 2,
+                        "edit": {
+                            "mode": "edit",
+                            "group_edit": true
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": false,
+                            "table": false,
+                            "standard": {
+                                "format": "comma",
+                                "order": 1
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": true,
+                            "nested": true
+                        }
+                    },
+                    {
+                        "kind": "linked-table",
+                        "other_table_name_hint": "example__keywords",
+                        "other_table_id": 2,
+                        "mask": {
+                            "table_id": 2,
+                            "table_name_hint": "example__keywords",
+                            "is_preferred": false,
+                            "hide_in_editor": false,
+                            "hide_in_detail": false,
+                            "hide_in_print_dialog": false,
+                            "comment": "",
+                            "fields": [
+                                {
+                                    "inline": "standard",
+                                    "mask_id": "PREFERRED",
+                                    "column_id": 4,
+                                    "other_table_id": 8,
+                                    "kind": "link",
+                                    "column_name_hint": "keyword",
+                                    "other_table_name_hint": "keyword",
+                                    "edit": {
+                                        "mode": "edit",
+                                        "group_edit": true
+                                    },
+                                    "output": {
+                                        "detail": true,
+                                        "text": false,
+                                        "table": false,
+                                        "standard": {
+                                            "format": "comma"
+                                        },
+                                        "standard_eas": {}
+                                    },
+                                    "search": {
+                                        "expert": true,
+                                        "fulltext": true,
+                                        "facet": true,
+                                        "nested": false
+                                    }
+                                }
+                            ]
+                        },
+                        "edit": {
+                            "mode": "edit",
+                            "append_only": false,
+                            "as_table": false,
+                            "show_labels": false
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": false,
+                            "table": false,
+                            "standard": {
+                                "format": "comma"
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": false,
+                            "facet": false,
+                            "nested": false
+                        }
+                    },
+                    {
+                        "kind": "field",
+                        "column_name_hint": "example_slider",
+                        "column_id": 3,
+                        "edit": {
+                            "mode": "edit",
+                            "group_edit": true
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": false,
+                            "table": false,
+                            "standard": {
+                                "format": "comma"
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": true,
+                            "nested": true
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "keyword__all_fields",
+                "mask_id": 2,
+                "table_id": 8,
+                "table_name_hint": "keyword",
+                "is_preferred": true,
+                "hide_in_editor": false,
+                "hide_in_detail": false,
+                "hide_in_print_dialog": false,
+                "comment": "",
+                "system_fields": {
+                    "parent": {
+                        "inline": "standard",
+                        "mask_id": "SAME",
+                        "output": {
+                            "mode": "show"
+                        },
+                        "edit": {
+                            "mode": "edit"
+                        }
+                    },
+                    "object_id": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "tags": {
+                        "output": {
+                            "mode": "show"
+                        },
+                        "edit": {
+                            "mode": "edit"
+                        }
+                    },
+                    "acl": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "owner": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "pool": {
+                        "output": {
+                            "mode": "show"
+                        }
+                    },
+                    "collections": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "publish": {
+                        "output": {
+                            "mode": "off"
+                        }
+                    }
+                },
+                "fields": [
+                    {
+                        "kind": "field",
+                        "column_name_hint": "name",
+                        "column_id": 16,
+                        "edit": {
+                            "mode": "edit",
+                            "group_edit": true
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": false,
+                            "table": false,
+                            "standard": {
+                                "format": "comma",
+                                "order": 1
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": true,
+                            "nested": true
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "medienart__all_fields",
+                "mask_id": 3,
+                "table_id": 3,
+                "table_name_hint": "medienart",
+                "is_preferred": true,
+                "hide_in_editor": false,
+                "hide_in_detail": false,
+                "hide_in_print_dialog": false,
+                "comment": "",
+                "system_fields": {
+                    "parent": {
+                        "inline": "standard",
+                        "mask_id": "SAME",
+                        "output": {
+                            "mode": "show"
+                        },
+                        "edit": {
+                            "mode": "edit"
+                        }
+                    },
+                    "object_id": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "tags": {
+                        "output": {
+                            "mode": "show"
+                        },
+                        "edit": {
+                            "mode": "edit"
+                        }
+                    },
+                    "acl": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "owner": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "pool": {
+                        "output": {
+                            "mode": "show"
+                        }
+                    },
+                    "collections": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "publish": {
+                        "output": {
+                            "mode": "off"
+                        }
+                    }
+                },
+                "fields": [
+                    {
+                        "kind": "field",
+                        "column_name_hint": "name",
+                        "column_id": 5,
+                        "edit": {
+                            "mode": "edit",
+                            "group_edit": true
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": false,
+                            "table": false,
+                            "standard": {
+                                "format": "comma",
+                                "order": 1
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": true,
+                            "nested": true
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "medium_cd",
+                "mask_id": 4,
+                "table_id": 4,
+                "table_name_hint": "medium",
+                "is_preferred": true,
+                "hide_in_editor": false,
+                "hide_in_detail": false,
+                "hide_in_print_dialog": false,
+                "require_comment": "never",
+                "comment": "",
+                "system_fields": {
+                    "parent": {
+                        "inline": "standard",
+                        "mask_id": "PREFERRED",
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "object_id": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "tags": {
+                        "output": {
+                            "mode": "show"
+                        },
+                        "edit": {
+                            "mode": "edit"
+                        }
+                    },
+                    "acl": {
+                        "output": {
+                            "mode": "show"
+                        },
+                        "edit": {
+                            "mode": "edit"
+                        }
+                    },
+                    "owner": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "pool": {
+                        "output": {
+                            "mode": "show"
+                        }
+                    },
+                    "collections": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "publish": {
+                        "output": {
+                            "mode": "off"
+                        }
+                    }
+                },
+                "fields": [
+                    {
+                        "kind": "field",
+                        "column_name_hint": "titel",
+                        "column_id": 21,
+                        "edit": {
+                            "mode": "edit",
+                            "group_edit": false
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": true,
+                            "table": true,
+                            "standard": {
+                                "format": "comma",
+                                "order": 1
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": false,
+                            "nested": false
+                        },
+                        "custom_settings": {}
+                    },
+                    {
+                        "kind": "field",
+                        "column_name_hint": "identifier",
+                        "column_id": 6,
+                        "edit": {
+                            "mode": "edit",
+                            "group_edit": false
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": true,
+                            "table": true,
+                            "standard": {
+                                "format": "comma",
+                                "order": 1
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": true,
+                            "nested": false
+                        },
+                        "custom_settings": {}
+                    },
+                    {
+                        "inline": "standard",
+                        "mask_id": "PREFERRED",
+                        "column_id": 7,
+                        "other_table_id": 3,
+                        "kind": "link",
+                        "column_name_hint": "medienart",
+                        "other_table_name_hint": "medienart",
+                        "edit": {
+                            "mode": "show",
+                            "group_edit": false
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": true,
+                            "table": true,
+                            "standard": {
+                                "format": "comma",
+                                "order": 2
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": true,
+                            "nested": false
+                        },
+                        "custom_settings": {}
+                    },
+                    {
+                        "kind": "field",
+                        "column_name_hint": "ablaufdatum",
+                        "column_id": 22,
+                        "edit": {
+                            "mode": "edit",
+                            "group_edit": false
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": true,
+                            "table": true,
+                            "standard": {
+                                "format": "comma"
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": false,
+                            "fulltext": false,
+                            "facet": true,
+                            "nested": false
+                        },
+                        "custom_settings": {}
+                    },
+                    {
+                        "kind": "field",
+                        "column_name_hint": "spieldauer_min",
+                        "column_id": 8,
+                        "edit": {
+                            "mode": "edit",
+                            "group_edit": false
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": true,
+                            "table": true,
+                            "standard": {
+                                "format": "comma"
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": true,
+                            "nested": false
+                        },
+                        "custom_settings": {}
+                    },
+                    {
+                        "kind": "field",
+                        "column_name_hint": "spieldauer",
+                        "column_id": 9,
+                        "edit": {
+                            "mode": "show",
+                            "group_edit": false
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": true,
+                            "table": true,
+                            "standard": {
+                                "format": "comma"
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": true,
+                            "nested": false
+                        },
+                        "custom_settings": {}
+                    },
+                    {
+                        "kind": "field",
+                        "column_name_hint": "seitenzahl",
+                        "column_id": 10,
+                        "edit": {
+                            "mode": "off",
+                            "group_edit": false
+                        },
+                        "output": {
+                            "detail": false,
+                            "text": false,
+                            "table": false,
+                            "standard": {
+                                "format": "comma"
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": false,
+                            "fulltext": false,
+                            "facet": false,
+                            "nested": false
+                        },
+                        "custom_settings": {}
+                    }
+                ]
+            },
+            {
+                "name": "object__all_fields",
+                "mask_id": 5,
+                "table_id": 5,
+                "table_name_hint": "object",
+                "is_preferred": true,
+                "hide_in_editor": false,
+                "hide_in_detail": false,
+                "hide_in_print_dialog": false,
+                "comment": "",
+                "system_fields": {
+                    "parent": {
+                        "inline": "standard",
+                        "mask_id": "SAME",
+                        "output": {
+                            "mode": "show"
+                        },
+                        "edit": {
+                            "mode": "edit"
+                        }
+                    },
+                    "object_id": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "tags": {
+                        "output": {
+                            "mode": "show"
+                        },
+                        "edit": {
+                            "mode": "edit"
+                        }
+                    },
+                    "acl": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "owner": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "pool": {
+                        "output": {
+                            "mode": "show"
+                        }
+                    },
+                    "collections": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "publish": {
+                        "output": {
+                            "mode": "off"
+                        }
+                    }
+                },
+                "fields": [
+                    {
+                        "kind": "field",
+                        "column_name_hint": "name",
+                        "column_id": 11,
+                        "edit": {
+                            "mode": "edit",
+                            "group_edit": true
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": false,
+                            "table": false,
+                            "standard": {
+                                "format": "comma",
+                                "order": 1
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": true,
+                            "nested": true
+                        }
+                    },
+                    {
+                        "kind": "linked-table",
+                        "other_table_name_hint": "object__related_objects",
+                        "other_table_id": 6,
+                        "mask": {
+                            "table_id": 6,
+                            "table_name_hint": "object__related_objects",
+                            "is_preferred": false,
+                            "hide_in_editor": false,
+                            "hide_in_detail": false,
+                            "hide_in_print_dialog": false,
+                            "comment": "",
+                            "fields": [
+                                {
+                                    "inline": "standard",
+                                    "mask_id": "PREFERRED",
+                                    "column_id": 12,
+                                    "other_table_id": 5,
+                                    "kind": "link",
+                                    "column_name_hint": "lk_object_id",
+                                    "other_table_name_hint": "object",
+                                    "edit": {
+                                        "mode": "edit",
+                                        "group_edit": true
+                                    },
+                                    "output": {
+                                        "detail": true,
+                                        "text": false,
+                                        "table": false,
+                                        "standard": {
+                                            "format": "comma"
+                                        },
+                                        "standard_eas": {}
+                                    },
+                                    "search": {
+                                        "expert": true,
+                                        "fulltext": true,
+                                        "facet": true,
+                                        "nested": false
+                                    }
+                                },
+                                {
+                                    "inline": "standard",
+                                    "mask_id": "PREFERRED",
+                                    "column_id": 13,
+                                    "other_table_id": 7,
+                                    "kind": "link",
+                                    "column_name_hint": "lk_relation_id",
+                                    "other_table_name_hint": "relation",
+                                    "edit": {
+                                        "mode": "edit",
+                                        "group_edit": true
+                                    },
+                                    "output": {
+                                        "detail": true,
+                                        "text": false,
+                                        "table": false,
+                                        "standard": {
+                                            "format": "comma"
+                                        },
+                                        "standard_eas": {}
+                                    },
+                                    "search": {
+                                        "expert": true,
+                                        "fulltext": true,
+                                        "facet": true,
+                                        "nested": false
+                                    }
+                                }
+                            ]
+                        },
+                        "edit": {
+                            "mode": "edit",
+                            "append_only": false,
+                            "as_table": false,
+                            "show_labels": false
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": false,
+                            "table": false,
+                            "standard": {
+                                "format": "comma"
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": false,
+                            "facet": false,
+                            "nested": false
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "relation__all_fields",
+                "mask_id": 6,
+                "table_id": 7,
+                "table_name_hint": "relation",
+                "is_preferred": true,
+                "hide_in_editor": false,
+                "hide_in_detail": false,
+                "hide_in_print_dialog": false,
+                "comment": "",
+                "system_fields": {
+                    "parent": {
+                        "inline": "standard",
+                        "mask_id": "SAME",
+                        "output": {
+                            "mode": "show"
+                        },
+                        "edit": {
+                            "mode": "edit"
+                        }
+                    },
+                    "object_id": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "tags": {
+                        "output": {
+                            "mode": "show"
+                        },
+                        "edit": {
+                            "mode": "edit"
+                        }
+                    },
+                    "acl": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "owner": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "pool": {
+                        "output": {
+                            "mode": "show"
+                        }
+                    },
+                    "collections": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "publish": {
+                        "output": {
+                            "mode": "off"
+                        }
+                    }
+                },
+                "fields": [
+                    {
+                        "kind": "field",
+                        "column_name_hint": "relation",
+                        "column_id": 14,
+                        "edit": {
+                            "mode": "edit",
+                            "group_edit": true
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": false,
+                            "table": false,
+                            "standard": {
+                                "format": "comma",
+                                "order": 1
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": true,
+                            "nested": true
+                        }
+                    },
+                    {
+                        "inline": "standard",
+                        "mask_id": "PREFERRED",
+                        "column_id": 15,
+                        "other_table_id": 7,
+                        "kind": "link",
+                        "column_name_hint": "reverse_relation",
+                        "other_table_name_hint": "relation",
+                        "edit": {
+                            "mode": "edit",
+                            "group_edit": true
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": false,
+                            "table": false,
+                            "standard": {
+                                "format": "comma"
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": true,
+                            "nested": false
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "subject__all_fields",
+                "mask_id": 7,
+                "table_id": 9,
+                "table_name_hint": "subject",
+                "is_preferred": true,
+                "hide_in_editor": false,
+                "hide_in_detail": false,
+                "hide_in_print_dialog": false,
+                "comment": "",
+                "system_fields": {
+                    "parent": {
+                        "inline": "standard",
+                        "mask_id": "SAME",
+                        "output": {
+                            "mode": "show"
+                        },
+                        "edit": {
+                            "mode": "edit"
+                        }
+                    },
+                    "object_id": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "tags": {
+                        "output": {
+                            "mode": "show"
+                        },
+                        "edit": {
+                            "mode": "edit"
+                        }
+                    },
+                    "acl": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "owner": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "pool": {
+                        "output": {
+                            "mode": "show"
+                        }
+                    },
+                    "collections": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "publish": {
+                        "output": {
+                            "mode": "off"
+                        }
+                    }
+                },
+                "fields": [
+                    {
+                        "kind": "field",
+                        "column_name_hint": "subject",
+                        "column_id": 17,
+                        "edit": {
+                            "mode": "edit",
+                            "group_edit": true
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": false,
+                            "table": false,
+                            "standard": {
+                                "format": "comma",
+                                "order": 1
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": true,
+                            "nested": true
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "term__all_fields",
+                "mask_id": 8,
+                "table_id": 10,
+                "table_name_hint": "term",
+                "is_preferred": true,
+                "hide_in_editor": false,
+                "hide_in_detail": false,
+                "hide_in_print_dialog": false,
+                "comment": "",
+                "system_fields": {
+                    "parent": {
+                        "inline": "standard",
+                        "mask_id": "SAME",
+                        "output": {
+                            "mode": "show"
+                        },
+                        "edit": {
+                            "mode": "edit"
+                        }
+                    },
+                    "object_id": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "tags": {
+                        "output": {
+                            "mode": "show"
+                        },
+                        "edit": {
+                            "mode": "edit"
+                        }
+                    },
+                    "acl": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "owner": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "pool": {
+                        "output": {
+                            "mode": "show"
+                        }
+                    },
+                    "collections": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "publish": {
+                        "output": {
+                            "mode": "off"
+                        }
+                    }
+                },
+                "fields": [
+                    {
+                        "kind": "field",
+                        "column_name_hint": "term",
+                        "column_id": 18,
+                        "edit": {
+                            "mode": "edit",
+                            "group_edit": true
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": false,
+                            "table": false,
+                            "standard": {
+                                "format": "comma",
+                                "order": 1
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": true,
+                            "nested": true
+                        }
+                    },
+                    {
+                        "inline": "standard",
+                        "mask_id": "PREFERRED",
+                        "column_id": 19,
+                        "other_table_id": 9,
+                        "kind": "link",
+                        "column_name_hint": "lk_subject_id",
+                        "other_table_name_hint": "subject",
+                        "edit": {
+                            "mode": "edit",
+                            "group_edit": true
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": false,
+                            "table": false,
+                            "standard": {
+                                "format": "comma"
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": true,
+                            "nested": false
+                        }
+                    },
+                    {
+                        "kind": "field",
+                        "column_name_hint": "description",
+                        "column_id": 20,
+                        "edit": {
+                            "mode": "edit",
+                            "group_edit": true
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": false,
+                            "table": false,
+                            "standard": {
+                                "format": "comma"
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": true,
+                            "nested": true
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "medium_buch",
+                "mask_id": 9,
+                "table_id": 4,
+                "table_name_hint": "medium",
+                "is_preferred": false,
+                "hide_in_editor": false,
+                "hide_in_detail": false,
+                "hide_in_print_dialog": false,
+                "require_comment": "never",
+                "comment": "",
+                "system_fields": {
+                    "parent": {
+                        "inline": "standard",
+                        "mask_id": "PREFERRED",
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "object_id": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "tags": {
+                        "output": {
+                            "mode": "show"
+                        },
+                        "edit": {
+                            "mode": "edit"
+                        }
+                    },
+                    "acl": {
+                        "output": {
+                            "mode": "show"
+                        },
+                        "edit": {
+                            "mode": "edit"
+                        }
+                    },
+                    "owner": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "pool": {
+                        "output": {
+                            "mode": "show"
+                        }
+                    },
+                    "collections": {
+                        "output": {
+                            "mode": "off"
+                        },
+                        "edit": {
+                            "mode": "off"
+                        }
+                    },
+                    "publish": {
+                        "output": {
+                            "mode": "off"
+                        }
+                    }
+                },
+                "fields": [
+                    {
+                        "kind": "field",
+                        "column_name_hint": "titel",
+                        "column_id": 21,
+                        "edit": {
+                            "mode": "edit",
+                            "group_edit": false
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": true,
+                            "table": true,
+                            "standard": {
+                                "format": "comma",
+                                "order": 1
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": false,
+                            "nested": false
+                        },
+                        "custom_settings": {}
+                    },
+                    {
+                        "kind": "field",
+                        "column_name_hint": "identifier",
+                        "column_id": 6,
+                        "edit": {
+                            "mode": "edit",
+                            "group_edit": false
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": true,
+                            "table": true,
+                            "standard": {
+                                "format": "comma",
+                                "order": 1
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": true,
+                            "nested": false
+                        },
+                        "custom_settings": {}
+                    },
+                    {
+                        "inline": "standard",
+                        "mask_id": "PREFERRED",
+                        "column_id": 7,
+                        "other_table_id": 3,
+                        "kind": "link",
+                        "column_name_hint": "medienart",
+                        "other_table_name_hint": "medienart",
+                        "edit": {
+                            "mode": "show",
+                            "group_edit": false
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": true,
+                            "table": true,
+                            "standard": {
+                                "format": "comma",
+                                "order": 2
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": true,
+                            "nested": false
+                        },
+                        "custom_settings": {}
+                    },
+                    {
+                        "kind": "field",
+                        "column_name_hint": "ablaufdatum",
+                        "column_id": 22,
+                        "edit": {
+                            "mode": "edit",
+                            "group_edit": false
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": true,
+                            "table": true,
+                            "standard": {
+                                "format": "comma"
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": false,
+                            "fulltext": false,
+                            "facet": true,
+                            "nested": false
+                        },
+                        "custom_settings": {}
+                    },
+                    {
+                        "kind": "field",
+                        "column_name_hint": "spieldauer_min",
+                        "column_id": 8,
+                        "edit": {
+                            "mode": "off",
+                            "group_edit": false
+                        },
+                        "output": {
+                            "detail": false,
+                            "text": false,
+                            "table": false,
+                            "standard": {
+                                "format": "comma"
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": false,
+                            "fulltext": true,
+                            "facet": true,
+                            "nested": false
+                        },
+                        "custom_settings": {}
+                    },
+                    {
+                        "kind": "field",
+                        "column_name_hint": "spieldauer",
+                        "column_id": 9,
+                        "edit": {
+                            "mode": "off",
+                            "group_edit": false
+                        },
+                        "output": {
+                            "detail": false,
+                            "text": false,
+                            "table": false,
+                            "standard": {
+                                "format": "comma"
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": false,
+                            "fulltext": false,
+                            "facet": true,
+                            "nested": false
+                        },
+                        "custom_settings": {}
+                    },
+                    {
+                        "kind": "field",
+                        "column_name_hint": "seitenzahl",
+                        "column_id": 10,
+                        "edit": {
+                            "mode": "edit",
+                            "group_edit": false
+                        },
+                        "output": {
+                            "detail": true,
+                            "text": true,
+                            "table": true,
+                            "standard": {
+                                "format": "comma"
+                            },
+                            "standard_eas": {}
+                        },
+                        "search": {
+                            "expert": true,
+                            "fulltext": true,
+                            "facet": true,
+                            "nested": false
+                        },
+                        "custom_settings": {}
+                    }
+                ]
+            }
+        ]
+    },
+    "keys": {
+        "mask.4.medium_buch.4.field.8.output_user_hint": {
+            "en-US": "",
+            "_comment": "medium.spieldauer_min",
+            "de-DE": ""
+        },
+        "mask.4.medium_buch.4.field.9.output_user_hint": {
+            "en-US": "",
+            "_comment": "medium.spieldauer",
+            "de-DE": ""
+        },
+        "mask.4.medium_buch.4.field.10.edit_user_hint": {
+            "en-US": "",
+            "_comment": "medium.seitenzahl",
+            "de-DE": ""
+        },
+        "schema.medium.column.spieldauer_min": {
+            "en-US": "Duration (Minutes)",
+            "_comment": "",
+            "de-DE": "Spieldauer (Minuten)"
+        },
+        "mask.4.medium_cd.4.field.8.output_user_hint": {
+            "en-US": "",
+            "_comment": "medium.spieldauer_min"
+        },
+        "mask.1.example__all_fields.name": {
+            "en-US": "",
+            "_comment": "",
+            "de-DE": "Standard"
+        },
+        "mask.4.medium_buch.4.field.6.edit_user_hint": {
+            "en-US": "",
+            "_comment": "medium.identifier",
+            "de-DE": ""
+        },
+        "mask.4.medium_buch.4.link.7.output_user_hint": {
+            "en-US": "",
+            "_comment": "medium.medienart",
+            "de-DE": ""
+        },
+        "mask.4.medium_cd.4.link.7.edit_user_hint": {
+            "en-US": "",
+            "_comment": "medium.medienart"
+        },
+        "mask.4.medium_buch.name": {
+            "en-US": "Media: Book",
+            "_comment": "",
+            "de-DE": "Medium: Buch"
+        },
+        "mask.10.term__all_fields.name": {
+            "en-US": "",
+            "_comment": "",
+            "de-DE": "Standard"
+        },
+        "schema.relation.column.relation": {
+            "en-US": "Relation",
+            "_comment": "",
+            "de-DE": "Beziehung"
+        },
+        "mask.3.medienart__all_fields.name": {
+            "en-US": "",
+            "_comment": "",
+            "de-DE": "Standard"
+        },
+        "mask.4.medium_cd.4.field.10.edit_user_hint": {
+            "en-US": "",
+            "_comment": "medium.seitenzahl"
+        },
+        "mask.4.medium_buch.4.field.10.output_user_hint": {
+            "en-US": "",
+            "_comment": "medium.seitenzahl",
+            "de-DE": ""
+        },
+        "mask.4.medium_buch.4.field.6.output_user_hint": {
+            "en-US": "",
+            "_comment": "medium.identifier",
+            "de-DE": ""
+        },
+        "mask.8.keyword__all_fields.name": {
+            "en-US": "",
+            "_comment": "",
+            "de-DE": "Standard"
+        },
+        "mask.4.medium_buch.4.field.21.edit_user_hint": {
+            "en-US": "",
+            "_comment": "medium.titel",
+            "de-DE": ""
+        },
+        "schema.example__keywords.column.keyword": {
+            "en-US": "",
+            "_comment": "",
+            "de-DE": "Schlagwort"
+        },
+        "mask.4.medium_cd.4.field.6.edit_user_hint": {
+            "en-US": "",
+            "_comment": "medium.identifier"
+        },
+        "mask.4.medium_cd.4.field.22.output_user_hint": {
+            "en-US": "",
+            "_comment": "medium.ablaufdatum"
+        },
+        "schema.medium.column.titel": {
+            "en-US": "Title",
+            "_comment": "",
+            "de-DE": "Ttiel"
+        },
+        "mask.4.medium_buch.4.field.22.output_user_hint": {
+            "en-US": "",
+            "_comment": "medium.ablaufdatum",
+            "de-DE": ""
+        },
+        "mask.4.medium_cd.4.field.21.edit_user_hint": {
+            "en-US": "",
+            "_comment": "medium.titel"
+        },
+        "schema.medium.column.ablaufdatum": {
+            "en-US": "Expiration Date",
+            "_comment": "",
+            "de-DE": "Ablaufdatum"
+        },
+        "mask.4.medium_buch.4.field.22.edit_user_hint": {
+            "en-US": "",
+            "_comment": "medium.ablaufdatum",
+            "de-DE": ""
+        },
+        "schema.term.column.lk_subject_id": {
+            "en-US": "",
+            "_comment": "",
+            "de-DE": "Subject"
+        },
+        "mask.4.medium_cd.4.field.22.edit_user_hint": {
+            "en-US": "",
+            "_comment": "medium.ablaufdatum"
+        },
+        "mask.4.medium_cd.4.field.10.output_user_hint": {
+            "en-US": "",
+            "_comment": "medium.seitenzahl"
+        },
+        "mask.4.medium_buch.4.field.21.output_user_hint": {
+            "en-US": "",
+            "_comment": "medium.titel",
+            "de-DE": ""
+        },
+        "mask.4.medium_cd.4.field.9.output_user_hint": {
+            "en-US": "",
+            "_comment": "medium.spieldauer"
+        },
+        "mask.4.medium_cd.4.field.21.output_user_hint": {
+            "en-US": "",
+            "_comment": "medium.titel"
+        },
+        "schema.example.column.file": {
+            "en-US": "File",
+            "_comment": "",
+            "de-DE": "Datei"
+        },
+        "schema.term.column.description": {
+            "en-US": "Description",
+            "_comment": "",
+            "de-DE": "Beschreibung"
+        },
+        "mask.4.medium_buch.4.field.8.edit_user_hint": {
+            "en-US": "",
+            "_comment": "medium.spieldauer_min",
+            "de-DE": ""
+        },
+        "mask.4.medium_cd.name": {
+            "en-US": "Media: CD",
+            "_comment": "",
+            "de-DE": "Medium: CD"
+        },
+        "mask.4.medium_cd.4.field.8.edit_user_hint": {
+            "en-US": "",
+            "_comment": "medium.spieldauer_min"
+        },
+        "mask.4.medium_buch.4.field.9.edit_user_hint": {
+            "en-US": "",
+            "_comment": "medium.spieldauer",
+            "de-DE": ""
+        },
+        "schema.medienart.column.name": {
+            "en-US": "Name",
+            "_comment": "",
+            "de-DE": "Name"
+        },
+        "schema.relation.column.reverse_relation": {
+            "en-US": "Relation Reverse",
+            "_comment": "",
+            "de-DE": "Beziehung Reverse"
+        },
+        "mask.4.medium_buch.4.link.7.edit_user_hint": {
+            "en-US": "",
+            "_comment": "medium.medienart",
+            "de-DE": ""
+        },
+        "schema.medium.column.spieldauer": {
+            "en-US": "Duration",
+            "_comment": "",
+            "de-DE": "Spieldauer"
+        },
+        "mask.7.relation__all_fields.name": {
+            "en-US": "",
+            "_comment": "",
+            "de-DE": "Standard"
+        },
+        "mask.4.medium_cd.4.field.9.edit_user_hint": {
+            "en-US": "",
+            "_comment": "medium.spieldauer"
+        },
+        "mask.4.medium_cd.4.field.6.output_user_hint": {
+            "en-US": "",
+            "_comment": "medium.identifier"
+        },
+        "schema.example.column.field": {
+            "en-US": "",
+            "_comment": "",
+            "de-DE": "Normales Feld"
+        },
+        "schema.term.column.term": {
+            "en-US": "Term",
+            "_comment": "",
+            "de-DE": "Term"
+        },
+        "schema.example.column.example_slider": {
+            "en-US": "Example Slider",
+            "_comment": "",
+            "de-DE": "Beispiel Slider"
+        },
+        "schema.medium.column.seitenzahl": {
+            "en-US": "Pages",
+            "_comment": "",
+            "de-DE": "Seitenzahl"
+        },
+        "schema.medium.column.identifier": {
+            "en-US": "Identifier",
+            "_comment": "",
+            "de-DE": "Identifikation"
+        },
+        "schema.example.column.example__keywords": {
+            "en-US": "",
+            "_comment": "",
+            "de-DE": "Schlagwörter"
+        },
+        "schema.subject.column.subject": {
+            "en-US": "",
+            "_comment": "",
+            "de-DE": "Subject"
+        },
+        "schema.object__related_objects.column.lk_object_id": {
+            "en-US": "Object",
+            "_comment": "",
+            "de-DE": "Objekt"
+        },
+        "mask.4.medium_cd.4.link.7.output_user_hint": {
+            "en-US": "",
+            "_comment": "medium.medienart"
+        },
+        "mask.5.object__all_fields.name": {
+            "en-US": "",
+            "_comment": "",
+            "de-DE": "Standard"
+        },
+        "mask.9.subject__all_fields.name": {
+            "en-US": "",
+            "_comment": "",
+            "de-DE": "Standard"
+        },
+        "schema.example.name": {
+            "en-US": "Example",
+            "_comment": "",
+            "de-DE": "Beispiel"
+        },
+        "schema.example__keywords.name": {
+            "en-US": "",
+            "_comment": "",
+            "de-DE": "Schlagwörter"
+        },
+        "schema.keyword.column.name": {
+            "en-US": "",
+            "_comment": "",
+            "de-DE": "Name"
+        },
+        "schema.object.column.object__related_objects": {
+            "en-US": "Related Objects",
+            "_comment": "",
+            "de-DE": "Verbundene Objekte"
+        },
+        "schema.keyword.name": {
+            "en-US": "Keyword",
+            "_comment": "",
+            "de-DE": "Schlagwort"
+        },
+        "schema.object__related_objects.name": {
+            "en-US": "Related Objects",
+            "_comment": "",
+            "de-DE": "Verbundene Objekte"
+        },
+        "schema.medienart.name": {
+            "en-US": "Media Type",
+            "_comment": "",
+            "de-DE": "Medienart"
+        },
+        "schema.medium.column.medienart": {
+            "en-US": "Media Type",
+            "_comment": "",
+            "de-DE": "Medienart"
+        },
+        "schema.medium.name": {
+            "en-US": "Media",
+            "_comment": "",
+            "de-DE": "Medium"
+        },
+        "schema.object.column.name": {
+            "en-US": "",
+            "_comment": "",
+            "de-DE": "Name"
+        },
+        "schema.object.name": {
+            "en-US": "Object",
+            "_comment": "",
+            "de-DE": "Objekt"
+        },
+        "schema.object__related_objects.column.lk_relation_id": {
+            "en-US": "Relation",
+            "_comment": "",
+            "de-DE": "Beziehung"
+        },
+        "schema.relation.name": {
+            "en-US": "",
+            "_comment": "",
+            "de-DE": "Relation"
+        },
+        "schema.subject.name": {
+            "en-US": "Subject",
+            "_comment": "",
+            "de-DE": "Subject"
+        },
+        "schema.term.name": {
+            "en-US": "Term",
+            "_comment": "",
+            "de-DE": "Term"
+        }
+    },
+    "version": 1,
+    "format_version": 1
+}

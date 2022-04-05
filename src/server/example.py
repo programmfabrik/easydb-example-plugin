@@ -4,7 +4,7 @@ import os
 import json
 import yaml
 
-from datetime import datetime, date
+from datetime import datetime
 import calendar
 import locale
 from dateutil.relativedelta import relativedelta
@@ -12,7 +12,6 @@ from dateutil.relativedelta import relativedelta
 from time import sleep
 from threading import Thread
 
-from context import EasydbException
 from context import InvalidValueError
 from context import get_json_value
 
@@ -143,7 +142,7 @@ def link_medienart(easydb_context, logger, data, search_result, name):
         for k in range(len(result_objects)):
 
             # check if the name is correct and there is a valid id
-            medienart_name = get_json_value(result_objects[k], 'medienart.name')
+            medienart_name = get_json_value(result_objects[k], 'medienart.name.de-DE')
             if isinstance(medienart_name, unicode) and medienart_name == unicode(name):
                 medienart_id = get_json_value(result_objects[k], 'medienart._id')
                 if isinstance(medienart_id, int):
@@ -195,7 +194,8 @@ def pre_update(easydb_context, easydb_info):
                 raise InvalidValueError('spieldauer_min', str(spieldauer_min), 'integer > 0')
 
             # format the time to hh:mm:ss. the decimal number is defined as an integer, so divide the value by 100 to get seconds
-            hours, remainder = divmod(int(float(spieldauer_min) / 100.0), 3600)
+            total_seconds = int((float(spieldauer_min) / 100) * 60)
+            hours, remainder = divmod(total_seconds, 3600)
             minutes, seconds = divmod(remainder, 60)
             data[i]['medium']['spieldauer'] = '%02d:%02d:%02d' % (hours, minutes, seconds)
 
@@ -349,9 +349,6 @@ def check_expiration_date(easydb_context):
     if result['medium_exists'] != u't':
         logger.debug('objecttype \'medium\' does not exist, skip')
         return
-
-    # load the configuration
-    config = easydb_context.get_config(connection)
 
     # search all objects of the type 'medium', using a SQL query, where the expiration data is in less then a week
     while True:
