@@ -24,7 +24,8 @@ def easydb_server_start(easydb_context):
     logger.debug('instance information: {0}'.format(json.dumps(easydb_context.get_instance(), indent=4)))
 
     # api callbacks that extend the api
-    # the api url is <server>/api/plugin/base/<plugin name>/<callback name>
+    # the api url is <server>/api/plugin/base/<plugin name>/<callback name>, since this plugin is included as a base plugin
+    # if a plugin is included as an extension plugin, the api url is <server>/api/plugin/extension/<plugin name>/<callback name> instead
     easydb_context.register_callback('api', {
         'name': 'echo',
         'callback': 'echo'
