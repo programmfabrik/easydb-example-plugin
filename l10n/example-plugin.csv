@@ -62,9 +62,9 @@ Don't show this option,example.mask.splitter.block.option.style,-,-
 ,server.config.parameter.system.example_plugin.string_list_sort.label|hint,`type: string-list-sort`,`type: string-list-sort`
 ,server.config.parameter.system.example_plugin.select.label,Dropdown Menü (Select),Dropdown Menu (Select)
 ,server.config.parameter.system.example_plugin.select.label|hint,`type: select`,`type: select`
-,server.config.parameter.system.example_plugin.select.apple,Option: Apfel,Option: Apple
-,server.config.parameter.system.example_plugin.select.banana,Option: Banane,Option: Banana
-,server.config.parameter.system.example_plugin.select.kiwi,Option: Kiwi,Option: Kiwi
+,server.config.option.system.example_plugin.select.apple,Option: Apfel,Option: Apple
+,server.config.option.system.example_plugin.select.banana,Option: Banane,Option: Banana
+,server.config.option.system.example_plugin.select.kiwi,Option: Kiwi,Option: Kiwi
 ,server.config.parameter.system.example_plugin.date.label,Datum + Zeit (Texteingabe oder Auswahl),Date + Time (Text Input and Date Picker)
 ,server.config.parameter.system.example_plugin.date.label|hint,`type: date`,`type: date`
 ,server.config.parameter.system.example_plugin.tag_select.label,Auswahl von Tags,Selection of Tags
