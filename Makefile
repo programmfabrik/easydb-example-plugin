@@ -27,6 +27,8 @@ SCSS_FILES = src/webfrontend/example-plugin.scss
 WEBHOOK_NAME = example
 WEBHOOK_FILES = src/webhooks/Example.coffee
 
+WEBPACK_CONFIG = src/update/webpack.config.js
+
 COFFEE_FILES = \
 	src/webfrontend/ExampleTrayApp.coffee \
 	src/webfrontend/ExampleBaseConfig.coffee \
@@ -45,19 +47,8 @@ COFFEE_FILES = \
 # EditorPlugin is not built in per default, its to annoying during testing.
 # src/webfrontend/ExampleEditorPlugin.coffee
 
-all: build
+include lib/Makefile.inc
 
-include easydb-library/tools/base-plugins.make
-
-build: code css npm_install updater buildinfojson
-
-updater:
-	./node_modules/webpack/bin/webpack.js --config src/update/webpack.config.js
-
-npm_install:
-	npm install
-	cp -r node_modules build/node_modules
-
-code: $(JS) $(L10N) $(WEBHOOK_JS)
+all: build ## build all
 
 clean: clean-base
