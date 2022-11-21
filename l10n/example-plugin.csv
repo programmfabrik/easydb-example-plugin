@@ -1,90 +1,94 @@
-,key,de-DE,en-US
-,example.tray.app.button|icon,fa-question,fa-question
-,example.tray.app.button|tooltip,Klick mich!,Click me
-,example.tray.app.thank_you.md,Danke dass Sie **easydb** benutzen!,Thanks for using **easydb**!
-,root.menu.example.app.label|icon,fa-bath,fa-bath
-,root.menu.example.app.label|tooltip,Beispiel Plugin,Example Plugin
-,root.menu.example.app.label|text,Beispiel Plugin,Example Plugin
-,example.root.app.button.base_config|text,Basis Konfiguration,Base Config
-,example.root.app.button.system_right|text,System Rechte,System Rights
-,example.root.app.button.server_echo|text,Server API: echo,Server API: echo
-,example.root.app.button.server_session|text,Server API: session,Server API: session
-,example.root.app.button.server_config|text,Server API: config,Server API: config
-,example.root.app.button.server_tmp|text,Server API: tmp,Server API: tmp
-,example.root.app.button.server_instance|text,Server API: instance,Server API: instance
-,example.app.label,Beispiel App,Example App
-,example.detail.sidebar.plugin.button|icon,fa-code,fa-code
-,type.extension.custom.settings.config.parameter.base.ex_text_online.ex_1.label,Mehr Info?,More Info?
-,example.export.manager.plugin.name,Beispiel Export Plugin,Example Export Plugin
-,example.custom.data.type.name,Beispiel Slider,Example Slider
-,example.custom.data.type.datamodel_info,Werte: %(from)s - %(to)s,Values: %(from)s - %(to)s
-,example.custom.data.type.config.parameter.schema.range.from.label,Wert von,Value from
-,example.custom.data.type.config.parameter.schema.range.to.label,Wert bis,Value to
-,example.custom.data.type.config.parameter.mask.appearance.color.label,Farbe,Color
-,example.custom.data.type.config.option.mask.appearance.color.red,Rot,Red
-,example.custom.data.type.config.option.mask.appearance.color.blue,Blau,Blue
-,example.custom.data.type.config.option.mask.appearance.color.green,Grün,Green
-,example.custom.data.type.input.value,Wert,Value
-,example.export.manager.form.with_tags.label,YML mit Tags exportieren,Export YML with tags
-,example.export.manager.form.with_tags.text,YML Datei mit Python-spezifischen Tags erzeugen,Create YML file with python specific tags
-,server.config.group.system.example.title,Beispiel Plugin,Example Plugin
-,example.asset.detail.360degrees|text,360°,360°
-,example.asset.detail.360degrees|icon,fa-eye,fa-eye
-,acl.right.manager.group.system.plugin.example-plugin.example,Beispiel Plugin,Example Plugin
-,server.right.system.plugin.example-plugin.example,Sichtbar,Visible
-,example.mask.splitter.simple.name,Beispiel Splitter (einfach),Example Splitter (simple)
-,example.mask.splitter.block.name,Beispiel Splitter (block),Example Splitter (block)
-,example.mask.splitter.simple.title|text,Einfacher Splitter,Simple Splitter
-,example.mask.splitter.block.title|text,Block Splitter,Block Splitter
-,example.mask.splitter.simple.option.title,Titel: %(value)s,Title: %(value)s
-,example.mask.splitter.block.option.color,%(value)s,%(value)s
-Don't show this option,example.mask.splitter.block.option.style,-,-
-,pdf-creator.node.an-example-node.display-name,Example Node,Example Node
-,pdf-creator.node.an-example-node.settings.title,Title,Title
-,,,
-,server.config.group.system.example.introduction,"Sammlung von Basiskonfigurationsfeldern, die in Plugins konfiguriert werden können",Collection of fields for the base configuration which can be defined by plugins
-,server.config.name.system.example_plugin,Konfiguration,Configuration
-,server.config.parameter.system.example_plugin.text.label,Einzeiliger Text,Oneline Text
-,server.config.parameter.system.example_plugin.text.label|hint,`type: text`,`type: text`
-,server.config.parameter.system.example_plugin.int.label,Zahlenfeld,Number
-,server.config.parameter.system.example_plugin.int.label|hint,`type: int`,`type: int`
-,server.config.parameter.system.example_plugin.email.label,Textfeld für Mailadressen,Text field for email addresses
-,server.config.parameter.system.example_plugin.email.label|hint,`type: email`,`type: email`
-,server.config.parameter.system.example_plugin.text_multi.label,Mehrzeiliger Text,Multiline Text
-,server.config.parameter.system.example_plugin.text_multi.label|hint,`type: text-multiline`,`type: text-multiline`
-,server.config.parameter.system.example_plugin.text_l10n.label,Mehrsprachiger Text,Multilanguage Text
-,server.config.parameter.system.example_plugin.text_l10n.label|hint,`type: text-l10n`,`type: text-l10n`
-,server.config.parameter.system.example_plugin.text_l10n_multi.label,Mehrzeiliger mehrsprachiger Text,Multilanguage multiline Text
-,server.config.parameter.system.example_plugin.text_l10n_multi.label|hint,`type: text-l10n-multiline`,`type: text-l10n-multiline`
-,server.config.parameter.system.example_plugin.string_list.label,Ungeordnete Liste von Strings,Unsorted list of strings
-,server.config.parameter.system.example_plugin.string_list.label|hint,`type: string-list`,`type: string-list`
-,server.config.parameter.system.example_plugin.string_list_sort.label,Sortierbare Liste von Strings,Sortable list of strings
-,server.config.parameter.system.example_plugin.string_list_sort.label|hint,`type: string-list-sort`,`type: string-list-sort`
-,server.config.parameter.system.example_plugin.select.label,Dropdown Menü (Select),Dropdown Menu (Select)
-,server.config.parameter.system.example_plugin.select.label|hint,`type: select`,`type: select`
-,server.config.option.system.example_plugin.select.apple,Option: Apfel,Option: Apple
-,server.config.option.system.example_plugin.select.banana,Option: Banane,Option: Banana
-,server.config.option.system.example_plugin.select.kiwi,Option: Kiwi,Option: Kiwi
-,server.config.parameter.system.example_plugin.date.label,Datum + Zeit (Texteingabe oder Auswahl),Date + Time (Text Input and Date Picker)
-,server.config.parameter.system.example_plugin.date.label|hint,`type: date`,`type: date`
-,server.config.parameter.system.example_plugin.tag_select.label,Auswahl von Tags,Selection of Tags
-,server.config.parameter.system.example_plugin.tag_select.label|hint,`type: tag-select`,`type: tag-select`
-,server.config.parameter.system.example_plugin.tagfilter_select.label,Tagfilter,Tagfilter
-,server.config.parameter.system.example_plugin.tagfilter_select.label|hint,`type: tagfilter-select`,`type: tagfilter-select`
-,server.config.parameter.system.example_plugin.profile_mapping.label,Auswahl eines Metadatenmappings,Selection of a Metadata Mapping
-,server.config.parameter.system.example_plugin.profile_mapping.label|hint,"`type: int
-plugin_type: profile_mapping_select`",Enhancement defined by the plugin
-,server.config.parameter.system.example_plugin.easydb_group.label,Auswahl einer Gruppe,Selection of a Group
+,key,de-DE,en-US,da-DK,fi-FI,sv-SE
+,acl.right.manager.group.system.plugin.example-plugin.example,Beispiel Plugin,Example Plugin,Example Plugin,Esimerkkilaajennus,Example Plugin
+,example.app.label,Beispiel App,Example App,Example App,esimerkkisovellus,Example App
+,example.asset.detail.360degrees|icon,fa-eye,fa-eye,fa-eye,fa-eye,fa-eye
+,example.asset.detail.360degrees|text,360°,360°,360°,360°,360°
+,example.custom.data.type.config.option.mask.appearance.color.blue,Blau,Blue,Blue,Sininen,Blue
+,example.custom.data.type.config.option.mask.appearance.color.green,Grün,Green,Green,Vihreä,Green
+,example.custom.data.type.config.option.mask.appearance.color.red,Rot,Red,Red,Punainen,Red
+,example.custom.data.type.config.parameter.mask.appearance.color.label,Farbe,Color,Color,Väri,Color
+,example.custom.data.type.config.parameter.schema.range.from.label,Wert von,Value from,Value from,Arvo mistä,Value from
+,example.custom.data.type.config.parameter.schema.range.to.label,Wert bis,Value to,Value to,Arvo mihin,Value to
+,example.custom.data.type.datamodel_info,Werte: %(from)s - %(to)s,Values: %(from)s - %(to)s,Values: %(from)s - %(to)s,Arvot: %(from)s - %(to)s,Values: %(from)s - %(to)s
+,example.custom.data.type.input.value,Wert,Value,Value,Arvo,Value
+,example.custom.data.type.name,Beispiel Slider,Example Slider,Example Slider,Esimerkkiliukusäädin,Example Slider
+,example.detail.sidebar.plugin.button|icon,fa-code,fa-code,fa-code,fa-code,fa-code
+,example.export.manager.form.with_tags.label,YML mit Tags exportieren,Export YML with tags,Export YML with tags,Vie YML tunnisteilla,Export YML with tags
+,example.export.manager.form.with_tags.text,YML Datei mit Python-spezifischen Tags erzeugen,Create YML file with python specific tags,Create YML file with python specific tags,Luo YML-tiedosto Python-kohtaisilla tunnisteilla,Create YML file with python specific tags
+,example.export.manager.plugin.name,Beispiel Export Plugin,Example Export Plugin,Example Export Plugin,Esimerkki vientilaajennuksesta,Example Export Plugin
+,example.mask.splitter.block.name,Beispiel Splitter (block),Example Splitter (block),Example Splitter (block),Esimerkkijakaja (lohko),Example Splitter (block)
+,example.mask.splitter.block.option.color,%(value)s,%(value)s,%(value)s,%(value)s,%(value)s
+Don't show this option,example.mask.splitter.block.option.style,-,-,-,-,-
+,example.mask.splitter.block.title|text,Block Splitter,Block Splitter,Block Splitter,Lohkojakaja,Block Splitter
+,example.mask.splitter.simple.name,Beispiel Splitter (einfach),Example Splitter (simple),Example Splitter (simple),Esimerkkijakaja (yksinkertainen),Example Splitter (simple)
+,example.mask.splitter.simple.option.title,Titel: %(value)s,Title: %(value)s,Title: %(value)s,Otsikko: %(value)s,Title: %(value)s
+,example.mask.splitter.simple.title|text,Einfacher Splitter,Simple Splitter,Simple Splitter,Yksinkertainen jakaja,Simple Splitter
+,example.root.app.button.base_config|text,Basis Konfiguration,Base Config,Base Config,Peruskokoonpano,Base Config
+,example.root.app.button.server_config|text,Server API: config,Server API: config,Server API: config,Palvelimen API: asetukset,Server API: config
+,example.root.app.button.server_echo|text,Server API: echo,Server API: echo,Server API: echo,Palvelimen API: echo,Server API: echo
+,example.root.app.button.server_instance|text,Server API: instance,Server API: instance,Server API: instance,Palvelimen API: esiintymä,Server API: instance
+,example.root.app.button.server_session|text,Server API: session,Server API: session,Server API: session,Palvelimen API: istunto,Server API: session
+,example.root.app.button.server_tmp|text,Server API: tmp,Server API: tmp,Server API: tmp,Palvelimen API: tmp,Server API: tmp
+,example.root.app.button.system_right|text,System Rechte,System Rights,System Rights,Järjestelmäoikeudet,System Rights
+,example.tray.app.button|icon,fa-question,fa-question,fa-question,fa-question,fa-question
+,example.tray.app.button|tooltip,Klick mich!,Click me,Click me,Klikkaa tästä!,Click me
+,example.tray.app.thank_you.md,Danke dass Sie **easydb** benutzen!,Thanks for using **easydb**!,Thanks for using **easydb**!,Kiitos **easydb:n** käytöstä!,Thanks for using **easydb**!
+,pdf-creator.node.an-example-node.display-name,Example Node,Example Node,Example Node,Esimerkkinoodi,Example Node
+,pdf-creator.node.an-example-node.settings.title,Title,Title,Title,Otsikko,Title
+,root.menu.example.app.label|icon,fa-bath,fa-bath,fa-bath,fa-bath,fa-bath
+,root.menu.example.app.label|text,Beispiel Plugin,Example Plugin,Example Plugin,Esimerkkilaajennos,Example Plugin
+,root.menu.example.app.label|tooltip,Beispiel Plugin,Example Plugin,Example Plugin,Esimerkkilaajennos,Example Plugin
+,server.config.group.system.example.introduction,"Sammlung von Basiskonfigurationsfeldern, die in Plugins konfiguriert werden können",Collection of fields for the base configuration which can be defined by plugins,Collection of fields for the base configuration which can be defined by plugins,"Kokoelma perusmäärityskenttiä, jotka voidaan määrittää laajennoksissa",Collection of fields for the base configuration which can be defined by plugins
+,server.config.group.system.example.title,Beispiel Plugin,Example Plugin,Example Plugin,Esimerkkilaajennos,Example Plugin
+,server.config.name.system.example_plugin,Konfiguration,Configuration,Configuration,Asetukset,Configuration
+,server.config.option.system.example_plugin.select.apple,Option: Apfel,Option: Apple,Option: Apple,Vaihtoehto: Omena,Option: Apple
+,server.config.option.system.example_plugin.select.banana,Option: Banane,Option: Banana,Option: Banana,Vaihtoehto: Banaani,Option: Banana
+,server.config.option.system.example_plugin.select.kiwi,Option: Kiwi,Option: Kiwi,Option: Kiwi,Vaihtoehto: Kiivi,Option: Kiwi
+,server.config.parameter.system.example_plugin.bool.checkbox,Ja/Nein,Yes/No,Yes/No,Kyllä / Ei,Yes/No
+,server.config.parameter.system.example_plugin.bool.label,Ja/Nein (Boolescher Wert),Yes/No (Boolean),Yes/No (Boolean),Kyllä/Ei (looginen arvo),Yes/No (Boolean)
+,server.config.parameter.system.example_plugin.bool.label|hint,`type: bool`,`type: bool`,`type: bool`,`tyyppi: Boolean`,`tyyppi: Boolean`
+,server.config.parameter.system.example_plugin.date.label,Datum + Zeit (Texteingabe oder Auswahl),Date + Time (Text Input and Date Picker),Date + Time (Text Input and Date Picker),Päivämäärä + aika (tekstinsyöttö tai valinta),Date + Time (Text Input and Date Picker)
+,server.config.parameter.system.example_plugin.date.label|hint,`type: date`,`type: date`,`type: date`,tyyppi: päivämäärä.,tyyppi: päivämäärä.
+,server.config.parameter.system.example_plugin.easydb_group.label,Auswahl einer Gruppe,Selection of a Group,Selection of a Group,Ryhmän valinta,Selection of a Group
 ,server.config.parameter.system.example_plugin.easydb_group.label|hint,"`type: int
 plugin_type: group_easydb_select`","`type: int
-plugin_type: group_easydb_select`"
-,server.config.parameter.system.example_plugin.bool.label,Ja/Nein (Boolescher Wert),Yes/No (Boolean)
-,server.config.parameter.system.example_plugin.bool.label|hint,`type: bool`,`type: bool`
-,server.config.parameter.system.example_plugin.bool.checkbox,Ja/Nein,Yes/No
-,server.config.parameter.system.example_plugin.example_base_config.label,"Komplexes Eingabefeld, dass durch eine Erweiterung der Basiskonfiguration durch das Plugin definiert wird",Complex input field which is defined by a base configuration enhancement by the plugin
+plugin_type: group_easydb_select`","`type: int
+plugin_type: group_easydb_select`",`tyyppi: int\nplugin_type: group_easydb_select`,`tyyppi: int\nplugin_type: group_easydb_select`
+,server.config.parameter.system.example_plugin.email.label,Textfeld für Mailadressen,Text field for email addresses,Text field for email addresses,Tekstikenttä sähköpostiosoitteita varten,Text field for email addresses
+,server.config.parameter.system.example_plugin.email.label|hint,`type: email`,`type: email`,`type: email`,`tyyppi: sähköposti`,`tyyppi: sähköposti`
+,server.config.parameter.system.example_plugin.example_base_config.label,"Komplexes Eingabefeld, dass durch eine Erweiterung der Basiskonfiguration durch das Plugin definiert wird",Complex input field which is defined by a base configuration enhancement by the plugin,Complex input field which is defined by a base configuration enhancement by the plugin,"Syöttökenttä, joka määrittetään laajentamalla peruskokoonpanoa laajennoksen avulla",Complex input field which is defined by a base configuration enhancement by the plugin
 ,server.config.parameter.system.example_plugin.example_base_config.label|hint,"`type: text
 plugin_type: example-base-config
 store_as_json: true`","`type: text
 plugin_type: example-base-config
-store_as_json: true`"
-,server.config.parameter.system.example_plugin.webhook_secret.label,Secret für einen Webhook,Secret for a Webhook
+store_as_json: true`","`type: text
+plugin_type: example-base-config
+store_as_json: true`","`tyyppi: teksti\nplugin_type: example-base-config
+ store_as_json: true`","`tyyppi: teksti\nplugin_type: example-base-config
+ store_as_json: true`"
+,server.config.parameter.system.example_plugin.int.label,Zahlenfeld,Number,Number,Numero,Number
+,server.config.parameter.system.example_plugin.int.label|hint,`type: int`,`type: int`,`type: int`,tyyppi: int.,tyyppi: int.
+,server.config.parameter.system.example_plugin.profile_mapping.label,Auswahl eines Metadatenmappings,Selection of a Metadata Mapping,Selection of a Metadata Mapping,Metatietokartoituksen valinta,Selection of a Metadata Mapping
+,server.config.parameter.system.example_plugin.profile_mapping.label|hint,"`type: int
+plugin_type: profile_mapping_select`",Enhancement defined by the plugin,Enhancement defined by the plugin,`tyyppi: int\nplugin_type: profile_mapping_select`,Enhancement defined by the plugin
+,server.config.parameter.system.example_plugin.select.label,Dropdown Menü (Select),Dropdown Menu (Select),Dropdown Menu (Select),Alasvetovalikko (Valitse),Dropdown Menu (Select)
+,server.config.parameter.system.example_plugin.select.label|hint,`type: select`,`type: select`,`type: select`,`tyyppi: valitse`,`tyyppi: valitse`
+,server.config.parameter.system.example_plugin.string_list_sort.label,Sortierbare Liste von Strings,Sortable list of strings,Sortable list of strings,Lajiteltava merkkijonoluettelo,Sortable list of strings
+,server.config.parameter.system.example_plugin.string_list_sort.label|hint,`type: string-list-sort`,`type: string-list-sort`,`type: string-list-sort`,`type: string-list-sort`,`type: string-list-sort`
+,server.config.parameter.system.example_plugin.string_list.label,Ungeordnete Liste von Strings,Unsorted list of strings,Unsorted list of strings,Järjestämätön merkkijonoluettelo,Unsorted list of strings
+,server.config.parameter.system.example_plugin.string_list.label|hint,`type: string-list`,`type: string-list`,`type: string-list`,`type: string-list`,`type: string-list`
+,server.config.parameter.system.example_plugin.tag_select.label,Auswahl von Tags,Selection of Tags,Selection of Tags,Tunnisteiden valinta,Selection of Tags
+,server.config.parameter.system.example_plugin.tag_select.label|hint,`type: tag-select`,`type: tag-select`,`type: tag-select`,`type: tag select`,`type: tag select`
+,server.config.parameter.system.example_plugin.tagfilter_select.label,Tagfilter,Tagfilter,Tagfilter,Tunnistesuodatin,Tagfilter
+,server.config.parameter.system.example_plugin.tagfilter_select.label|hint,`type: tagfilter-select`,`type: tagfilter-select`,`type: tagfilter-select`,`type: tagfilter-select`,`type: tagfilter-select`
+,server.config.parameter.system.example_plugin.text_l10n_multi.label,Mehrzeiliger mehrsprachiger Text,Multilanguage multiline Text,Multilanguage multiline Text,Monirivinen monikielinen teksti,Multilanguage multiline Text
+,server.config.parameter.system.example_plugin.text_l10n_multi.label|hint,`type: text-l10n-multiline`,`type: text-l10n-multiline`,`type: text-l10n-multiline`,`type: text-l10n-multiline`,`type: text-l10n-multiline`
+,server.config.parameter.system.example_plugin.text_l10n.label,Mehrsprachiger Text,Multilanguage Text,Multilanguage Text,Monikielinen teksti,Multilanguage Text
+,server.config.parameter.system.example_plugin.text_l10n.label|hint,`type: text-l10n`,`type: text-l10n`,`type: text-l10n`,`type: text-l10n`,`type: text-l10n`
+,server.config.parameter.system.example_plugin.text_multi.label,Mehrzeiliger Text,Multiline Text,Multiline Text,Monirivinen teksti,Multiline Text
+,server.config.parameter.system.example_plugin.text_multi.label|hint,`type: text-multiline`,`type: text-multiline`,`type: text-multiline`,`type: text-multiline`,`type: text-multiline`
+,server.config.parameter.system.example_plugin.text.label,Einzeiliger Text,Oneline Text,Oneline Text,Yksirivinen teksti,Oneline Text
+,server.config.parameter.system.example_plugin.text.label|hint,`type: text`,`type: text`,`type: text`,`tyyppi: teksti`,`type: text`
+,server.config.parameter.system.example_plugin.webhook_secret.label,Secret für einen Webhook,Secret for a Webhook,Secret for a Webhook,Webhookin salaisuus,Secret for a Webhook
+,server.right.system.plugin.example-plugin.example,Sichtbar,Visible,Visible,Näkyvissä,Visible
+,type.extension.custom.settings.config.parameter.base.ex_text_online.ex_1.label,Mehr Info?,More Info?,More Info?,Lisätietoja?,More Info?
