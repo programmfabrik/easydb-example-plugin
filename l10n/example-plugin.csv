@@ -92,3 +92,6 @@ plugin_type: profile_mapping_select`",Enhancement defined by the plugin,Enhancem
 ,server.config.parameter.system.example_plugin.webhook_secret.label,Secret für einen Webhook,Secret for a Webhook,Secret for a Webhook,Webhookin salaisuus,Secret for a Webhook
 ,server.right.system.plugin.example-plugin.example,Sichtbar,Visible,Visible,Näkyvissä,Visible
 ,type.extension.custom.settings.config.parameter.base.ex_text_online.ex_1.label,Mehr Info?,More Info?,More Info?,Lisätietoja?,More Info?
+,server.config.group.system.plugin_example-plugin.title,Example Plugin,Example Plugin,Example Plugin,Example Plugin,Example Plugin
+,"server.config.group.system.plugin_example-plugin.introduction
+",Einstellungen für das Example Plugin,Settings for the example plugin,Settings for the example plugin,Settings for the example plugin,Settings for the example plugin
