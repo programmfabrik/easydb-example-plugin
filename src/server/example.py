@@ -144,7 +144,7 @@ def link_medienart(easydb_context, logger, data, search_result, name):
 
             # check if the name is correct and there is a valid id
             medienart_name = get_json_value(result_objects[k], 'medienart.name.de-DE')
-            if isinstance(medienart_name, unicode) and medienart_name == unicode(name):
+            if isinstance(medienart_name, str) and medienart_name == name:
                 medienart_id = get_json_value(result_objects[k], 'medienart._id')
                 if isinstance(medienart_id, int):
 
@@ -261,22 +261,20 @@ def export_as_yml(easydb_context, parameters):
         return
 
     # iterate over the definitions of the exported files and parse the json content
-    for f in files:
-        file_path = str(get_json_value(f, 'path', False))
+    for json_file in files:
+        file_path = str(get_json_value(json_file, 'path', False))
         if file_path.lower().endswith('.json'):
             # absolute path to the original file
             file_path = os.path.abspath(export_dir + '/' + file_path)
 
             # path of the new file
-            file_name = str(f['path'].split('.')[0] + '.yml')
+            file_name = str(json_file['path'].split('.')[0] + '.yml')
 
             logger.debug('Converting JSON file %s to YML' % file_path)
 
             try:
                 # load and parse the json file
-                file = open(file_path, 'r')
-                content = json.loads(file.read().decode('utf-8'))
-                file.close()
+                content = json.load(open(file_path,'r'))
 
                 # convert the objects that are defined in a json array to YML and save it in a file next to the original file
                 objects = get_json_value(content, 'objects', False)
@@ -305,7 +303,7 @@ def export_as_yml(easydb_context, parameters):
                         exporter.addFile(tmp_filename, file_name)
 
                         # remove the old JSON file
-                        exporter.removeFile(f['path'])
+                        exporter.removeFile(json_file['path'])
 
                 else:
                     logger.debug('Found no \'objects\' array')
