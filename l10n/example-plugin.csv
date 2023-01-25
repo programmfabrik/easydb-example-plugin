@@ -16,6 +16,7 @@
 ,example.export.manager.form.with_tags.label,YML mit Tags exportieren,Export YML with tags,Export YML with tags,Vie YML tunnisteilla,Exportera YML med taggar
 ,example.export.manager.form.with_tags.text,YML Datei mit Python-spezifischen Tags erzeugen,Create YML file with python specific tags,Create YML file with python specific tags,Luo YML-tiedosto Python-kohtaisilla tunnisteilla,Generera YML-fil med Python-specifika taggar
 ,example.export.manager.plugin.name,Beispiel Export Plugin,Example Export Plugin,Example Export Plugin,Esimerkki vientilaajennuksesta,Exempel export plugin
+,example.export.manager.form.type.label,Export Type,Export Type,Export Type,Export Type,Export Type
 ,example.mask.splitter.block.name,Beispiel Splitter (block),Example Splitter (block),Example Splitter (block),Esimerkkijakaja (lohko),Exempel på splitter (block)
 ,example.mask.splitter.block.option.color,%(value)s,%(value)s,%(value)s,%(value)s,%(value)s
 Don't show this option,example.mask.splitter.block.option.style,-,-,-,-,-

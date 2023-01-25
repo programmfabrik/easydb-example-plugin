@@ -22,13 +22,8 @@ class ExampleExportManagerPlugin extends ExportManagerPlugin
 
 		form = new CUI.Form
 			data: @__data
+			class: "ez5-example-export-form"
 			fields: [
-				type: CUI.Checkbox
-				name: "with_tags"
-				form:
-					label: $$("example.export.manager.form.with_tags.label")
-				text: $$("example.export.manager.form.with_tags.text")
-			,
 				type: CUI.Select
 				name: "type"
 				form:
@@ -39,6 +34,12 @@ class ExampleExportManagerPlugin extends ExportManagerPlugin
 				,
 					value: "xml"
 				]
+			,
+				type: CUI.Checkbox
+				name: "with_tags"
+				form:
+					label: $$("example.export.manager.form.with_tags.label")
+				text: $$("example.export.manager.form.with_tags.text")
 			]
 		return form.start()
 
