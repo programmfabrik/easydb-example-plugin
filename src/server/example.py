@@ -47,6 +47,8 @@ def easydb_server_start(easydb_context):
         'callback': 'instance'
     })
 
+    # TODO: api callback POST
+
     # register a callback that is called before an object would be saved in the database
     # callback registered in the server as 'db_pre_update'
     # method name that is called: 'pre_update'
@@ -117,12 +119,12 @@ def search_for_medienart(easydb_context, name):
     search_query = {
         'type': 'object',
         'generate_rights': False,
-        'include_fields': ['medienart._id'], # the field that we want to get as a search result
+        'include_fields': ['medienart._id'],  # the field that we want to get as a search result
         'search': [{
-            'type': 'in', # search on of the values in 'in'
+            'type': 'in',  # search on of the values in 'in'
             'bool': 'should',
-            'fields': ['medienart.name'], # the name of the field that we search for
-            'in': [name] # list of values that the field should have (only on in this case)
+            'fields': ['medienart.name'],  # the name of the field that we search for
+            'in': [name]  # list of values that the field should have (only on in this case)
         }]
     }
     logger.debug('Search Request: %s' % json.dumps(search_query, indent=4))
@@ -274,7 +276,7 @@ def export_as_yml(easydb_context, parameters):
 
             try:
                 # load and parse the json file
-                content = json.load(open(file_path,'r'))
+                content = json.load(open(file_path, 'r'))
 
                 # convert the objects that are defined in a json array to YML and save it in a file next to the original file
                 objects = get_json_value(content, 'objects', False)
@@ -486,6 +488,8 @@ def check_expiration_date(easydb_context):
 # write the current timestamp into a text field
 # assume that the objects are of objecttype 'obj' and have a text field 'timestamp'
 # this function is only called if there are transitions (for INSERT/UPDATE) on this objecttype with this plugin action set
+
+
 def example_transition_action(easydb_context, data):
     logger = easydb_context.get_logger('pf.plugin.base.example_plugin.example_transition_action')
 
@@ -506,6 +510,8 @@ def example_transition_action(easydb_context, data):
     return objects
 
 # method to cleanup process plugin resources before the server stops
+
+
 def stop(easydb_context):
     logger = easydb_context.get_logger('pf.plugin.base.example_plugin.process')
     logger.info('stop')
@@ -566,10 +572,32 @@ def echo(easydb_context, parameters):
     lines.append('')
     body = parameters['body']
     if len(body) > 0:
-        if 'text' in content_type or 'json' in content_type:
+
+        if content_type == 'application/json':
+            # request with JSON body
+            try:
+                content = json.loads(body)
+                plugin = get_json_value(content, 'plugin')
+                if plugin == 'example_plugin':
+                    msg = ''
+                    msg = get_json_value(content, 'message')
+                    if not isinstance(msg, str):
+                        msg = ''
+                    else:
+                        del content['message']
+
+                    content['answer'] = 'Your message was: `{0}`'.format(msg)
+
+                    return json_response(content)
+
+            except Exception as e:
+                return text_response('could not parse JSON BODY\n{0}\n'.format(str(e)), status_code=400)
+
+        if 'text' in content_type:
             lines.append('Body:')
             lines.append('')
             lines.append(body)
+
         else:
             lines.append('Body: {0} bytes'.format(len(body)))
     else:
