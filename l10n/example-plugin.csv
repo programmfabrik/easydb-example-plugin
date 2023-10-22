@@ -94,3 +94,19 @@ server.config.parameter.system.example_plugin.text.label|hint,`type: text`,FALSE
 server.config.parameter.system.example_plugin.webhook_secret.label,Secret für einen Webhook,FALSE,Secret for a Webhook,FALSE,Secret for a Webhook,FALSE,Webhookin salaisuus,FALSE,Hemlighet för en webhook,FALSE,,FALSE,,FALSE,,FALSE
 server.right.system.plugin.example-plugin.example,Sichtbar,FALSE,Visible,FALSE,Visible,FALSE,Näkyvissä,FALSE,Synlig,FALSE,,FALSE,,FALSE,,FALSE
 type.extension.custom.settings.config.parameter.base.ex_text_online.ex_1.label,Mehr Info?,FALSE,More Info?,FALSE,More Info?,FALSE,Lisätietoja?,FALSE,Mer information?,FALSE,,FALSE,,FALSE,,FALSE
+Examplefilepicker.filepicker.badge|text,Example Filepicker,TRUE,Example Filepicker,TRUE,Example Filepicker,TRUE,Example Filepicker,TRUE,Example Filepicker,TRUE,Example Filepicker,TRUE,,FALSE,,FALSE
+tool.collection.selection.Examplefilepicker.download|text,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,,FALSE,,FALSE
+tool.collection.selection.Examplefilepicker.download|icon,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,,FALSE,,FALSE
+tool.collection.selection.Examplefilepicker.download|favorite,Send to Example Server,TRUE,Example Server,TRUE,Example Server,TRUE,Example Server,TRUE,Example Server,TRUE,Example Server,FALSE,,FALSE,,FALSE
+tool.object.Examplefilepicker.download|text,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,,FALSE,,FALSE
+tool.object.Examplefilepicker.download|icon,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,,FALSE,,FALSE
+tool.object.Examplefilepicker.download|favorite,Example Server,TRUE,Example Server,TRUE,Example Server,TRUE,Example Server,TRUE,Example Server,TRUE,Example Server,TRUE,,FALSE,,FALSE
+Examplefilepicker.download.manager.modal.title,Example Server Exporter,TRUE,Example Server Exporter,TRUE,Example Server Exporter,TRUE,Example Server Exporter,TRUE,Example Server Exporter,TRUE,Example Server Exporter,TRUE,,FALSE,,FALSE
+Examplefilepicker.download.manager.modal.button.start|text,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,,FALSE,,FALSE
+Examplefilepicker.download.manager.modal.button.start|icon,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,,FALSE,,FALSE
+Examplefilepicker.download.manager.prepare.error,Es konnte keine passende Datei für die Übernahme nach Example Server gefunden werden.,TRUE,No matching file could be found for the transfer to Example Server.,TRUE,No matching file could be found for the transfer to Example Server.,TRUE,No matching file could be found for the transfer to Example Server.,TRUE,No matching file could be found for the transfer to Example Server.,TRUE,No matching file could be found for the transfer to Example Server.,TRUE,,FALSE,,FALSE
+Examplefilepicker.download.manager.report.upload_success.md,%(success)s Datei(en) erfolgreich an TYPO3 übertragen.,TRUE,%(success)s file(s) successfully transferred to Example Server.,TRUE,%(success)s file(s) successfully transferred to Example Server.,TRUE,%(success)s file(s) successfully transferred to Example Server.,TRUE,%(success)s file(s) successfully transferred to Example Server.,TRUE,%(success)s file(s) successfully transferred to Example Server.,TRUE,%(success)s file(s) successfully transferred to Example Server.,FALSE,,FALSE
+,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE
+,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE
+,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE
+,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE

@@ -40,7 +40,8 @@ COFFEE_FILES = \
 	src/webfrontend/ExampleExportManagerPlugin.coffee \
 	src/webfrontend/ExamplePdfCreatorNode.coffee \
 	src/webfrontend/ExampleRootApp.coffee \
-	src/webfrontend/ExampleTransitionAction.coffee
+	src/webfrontend/ExampleTransitionAction.coffee \
+	src/webfrontend/ExampleFilePicker.coffee
 
 # EditorPlugin is not built in per default, its to annoying during testing.
 # src/webfrontend/ExampleEditorPlugin.coffee

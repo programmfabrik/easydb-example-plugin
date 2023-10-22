@@ -31,6 +31,8 @@ plugin:
 
 custom_events:
   - EASYDB_EXAMPLE_PLUGIN_EVENT
+  - EXAMPLEFILEPICKER_FILE_COPY
+  - EXAMPLEFILEPICKER_FILE_COPY_ERROR
 
 custom_types:
   slider:
@@ -131,6 +133,19 @@ base_config:
         type: text
         default: ""
         position: 16
+
+  - name: ExampleFilepicker
+    group: cms
+    parameters:
+      active:
+        position: 0
+        type: bool
+      send_files:
+        position: 1
+        type: bool
+      send_files_max_filesize:
+        position: 2
+        type: int
 
 python-2:
   file: src/server/example.py
