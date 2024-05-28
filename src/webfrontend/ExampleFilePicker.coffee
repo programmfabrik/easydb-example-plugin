@@ -15,7 +15,7 @@ class ExampleDownloadManager extends FilepickerDownloadManager
 		return []
 
 
-class EcampleFilepicker extends Filepicker
+class ExampleFilepicker extends Filepicker
 	readOpts: ->
 		super()
 		@setDownloadManagerClass(ExampleDownloadManager)
@@ -24,10 +24,7 @@ class EcampleFilepicker extends Filepicker
 		'Examplefilepicker'
 
 ez5.session_ready ->
-	opts = {
-		baseConfig: ez5.session.getBaseConfig("plugin", 'example-plugin')["ExampleFilepicker"] or {}
-	}
-	EcampleFilepicker.session_ready('Examplefilepicker', opts)
+	ExampleFilepicker.session_ready('Examplefilepicker', 'example-plugin')
 
 
 
