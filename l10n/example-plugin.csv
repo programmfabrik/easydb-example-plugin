@@ -1,111 +1,121 @@
 key,de-DE,R,en-US,R,da-DK,R,fi-FI,R,sv-SE,R,fr-FR,R,it-IT,R,es-ES,R
-acl.right.manager.group.system.plugin.example-plugin.example,Beispiel Plugin,FALSE,Example Plugin,FALSE,Example Plugin,FALSE,Esimerkkilaajennus,FALSE,Exempel på plug-in,FALSE,,FALSE,,FALSE,,FALSE
-example.app.label,Beispiel App,FALSE,Example App,FALSE,Example App,FALSE,Esimerkkisovellus,FALSE,Exempel app,FALSE,,FALSE,,FALSE,,FALSE
-example.asset.detail.360degrees|icon,fa-eye,FALSE,fa-eye,FALSE,fa-eye,FALSE,fa-eye,FALSE,fa-eye,FALSE,,FALSE,,FALSE,,FALSE
-example.asset.detail.360degrees|text,360°,FALSE,360°,FALSE,360°,FALSE,360°,FALSE,360°,FALSE,,FALSE,,FALSE,,FALSE
-example.custom.data.type.config.option.mask.appearance.color.blue,Blau,FALSE,Blue,FALSE,Blue,FALSE,Sininen,FALSE,Blå,FALSE,,FALSE,,FALSE,,FALSE
-example.custom.data.type.config.option.mask.appearance.color.green,Grün,FALSE,Green,FALSE,Green,FALSE,Vihreä,FALSE,Grön,FALSE,,FALSE,,FALSE,,FALSE
-example.custom.data.type.config.option.mask.appearance.color.red,Rot,FALSE,Red,FALSE,Red,FALSE,Punainen,FALSE,Röd,FALSE,,FALSE,,FALSE,,FALSE
-example.custom.data.type.config.parameter.mask.appearance.color.label,Farbe,FALSE,Color,FALSE,Color,FALSE,Väri,FALSE,Färg,FALSE,,FALSE,,FALSE,,FALSE
-example.custom.data.type.config.parameter.schema.range.from.label,Wert von,FALSE,Value from,FALSE,Value from,FALSE,Arvo mistä,FALSE,Värde från,FALSE,,FALSE,,FALSE,,FALSE
-example.custom.data.type.config.parameter.schema.range.to.label,Wert bis,FALSE,Value to,FALSE,Value to,FALSE,Arvo mihin,FALSE,Värde till,FALSE,,FALSE,,FALSE,,FALSE
-example.custom.data.type.datamodel_info,Werte: %(from)s - %(to)s,FALSE,Values: %(from)s - %(to)s,FALSE,Values: %(from)s - %(to)s,FALSE,Arvot: %(from)s - %(to)s,FALSE,Värden: %(from)s - %(to)s,FALSE,,FALSE,,FALSE,,FALSE
-example.custom.data.type.input.value,Wert,FALSE,Value,FALSE,Value,FALSE,Arvo,FALSE,Värde,FALSE,,FALSE,,FALSE,,FALSE
-example.custom.data.type.name,Beispiel Slider,FALSE,Example Slider,FALSE,Example Slider,FALSE,Esimerkkiliukusäädin,FALSE,Exempel skjutreglage,FALSE,,FALSE,,FALSE,,FALSE
-example.detail.sidebar.plugin.button|icon,fa-code,FALSE,fa-code,FALSE,fa-code,FALSE,fa-code,FALSE,fa-code,FALSE,,FALSE,,FALSE,,FALSE
-example.export.manager.form.with_tags.label,YML mit Tags exportieren,FALSE,Export YML with tags,FALSE,Export YML with tags,FALSE,Vie YML tunnisteilla,FALSE,Exportera YML med taggar,FALSE,,FALSE,,FALSE,,FALSE
-example.export.manager.form.with_tags.text,YML Datei mit Python-spezifischen Tags erzeugen,FALSE,Create YML file with python specific tags,FALSE,Create YML file with python specific tags,FALSE,Luo YML-tiedosto Python-kohtaisilla tunnisteilla,FALSE,Generera YML-fil med Python-specifika taggar,FALSE,,FALSE,,FALSE,,FALSE
-example.export.manager.plugin.name,Beispiel Export Plugin,FALSE,Example Export Plugin,FALSE,Example Export Plugin,FALSE,Esimerkki vientilaajennuksesta,FALSE,Exempel export plugin,FALSE,,FALSE,,FALSE,,FALSE
-example.export.manager.form.type.label,Export Type,FALSE,Export Type,FALSE,Export Type,FALSE,Export Type,FALSE,Export Type,FALSE,,FALSE,,FALSE,,FALSE
-example.mask.splitter.block.name,Beispiel Splitter (block),FALSE,Example Splitter (block),FALSE,Example Splitter (block),FALSE,Esimerkkijakaja (lohko),FALSE,Exempel på splitter (block),FALSE,,FALSE,,FALSE,,FALSE
-example.mask.splitter.block.option.color,%(value)s,FALSE,%(value)s,FALSE,%(value)s,FALSE,%(value)s,FALSE,%(value)s,FALSE,,FALSE,,FALSE,,FALSE
-example.mask.splitter.block.option.style,-,FALSE,-,FALSE,-,FALSE,-,FALSE,-,FALSE,,FALSE,,FALSE,,FALSE
-example.mask.splitter.block.title|text,Block Splitter,FALSE,Block Splitter,FALSE,Block Splitter,FALSE,Lohkojakaja,FALSE,Block Splitter,FALSE,,FALSE,,FALSE,,FALSE
-example.mask.splitter.simple.name,Beispiel Splitter (einfach),FALSE,Example Splitter (simple),FALSE,Example Splitter (simple),FALSE,Esimerkkijakaja (yksinkertainen),FALSE,Exempel på splitter (enkel),FALSE,,FALSE,,FALSE,,FALSE
-example.mask.splitter.simple.option.title,Titel: %(value)s,FALSE,Title: %(value)s,FALSE,Title: %(value)s,FALSE,Otsikko: %(value)s,FALSE,Titel: %(value)s,FALSE,,FALSE,,FALSE,,FALSE
-example.mask.splitter.simple.title|text,Einfacher Splitter,FALSE,Simple Splitter,FALSE,Simple Splitter,FALSE,Yksinkertainen jakaja,FALSE,Enkel Splitter,FALSE,,FALSE,,FALSE,,FALSE
-example.root.app.button.base_config|text,Basis Konfiguration,FALSE,Base Config,FALSE,Base Config,FALSE,Peruskokoonpano,FALSE,Baskonfiguration,FALSE,,FALSE,,FALSE,,FALSE
-example.root.app.button.server_config|text,Server API: config,FALSE,Server API: config,FALSE,Server API: config,FALSE,Palvelimen API: asetukset,FALSE,Server API: config,FALSE,,FALSE,,FALSE,,FALSE
-example.root.app.button.server_echo|text,Server API: echo,FALSE,Server API: echo,FALSE,Server API: echo,FALSE,Palvelimen API: echo,FALSE,Server API: echo,FALSE,,FALSE,,FALSE,,FALSE
-example.root.app.button.server_instance|text,Server API: instance,FALSE,Server API: instance,FALSE,Server API: instance,FALSE,Palvelimen API: esiintymä,FALSE,Server API: instance,FALSE,,FALSE,,FALSE,,FALSE
-example.root.app.button.server_session|text,Server API: session,FALSE,Server API: session,FALSE,Server API: session,FALSE,Palvelimen API: istunto,FALSE,Server API: session,FALSE,,FALSE,,FALSE,,FALSE
-example.root.app.button.server_tmp|text,Server API: tmp,FALSE,Server API: tmp,FALSE,Server API: tmp,FALSE,Palvelimen API: tmp,FALSE,Server API: tmp,FALSE,,FALSE,,FALSE,,FALSE
-example.root.app.button.system_right|text,System Rechte,FALSE,System Rights,FALSE,System Rights,FALSE,Järjestelmäoikeudet,FALSE,Systemrättigheter,FALSE,,FALSE,,FALSE,,FALSE
-example.tray.app.button|icon,fa-question,FALSE,fa-question,FALSE,fa-question,FALSE,fa-question,FALSE,fa-question,FALSE,,FALSE,,FALSE,,FALSE
-example.tray.app.button|tooltip,Klick mich!,FALSE,Click me,FALSE,Click me,FALSE,Klikkaa tästä!,FALSE,Klicka på mig!,FALSE,,FALSE,,FALSE,,FALSE
-example.tray.app.thank_you.md,Danke dass Sie **easydb** benutzen!,FALSE,Thanks for using **easydb**!,FALSE,Thanks for using **easydb**!,FALSE,Kiitos **easydb:n** käytöstä!,FALSE,Tack för att du använder **easydb**!,FALSE,,FALSE,,FALSE,,FALSE
-pdf-creator.node.an-example-node.display-name,Example Node,FALSE,Example Node,FALSE,Example Node,FALSE,Esimerkkinoodi,FALSE,Exempel Nod,FALSE,,FALSE,,FALSE,,FALSE
-pdf-creator.node.an-example-node.settings.title,Title,FALSE,Title,FALSE,Title,FALSE,Otsikko,FALSE,Titel,FALSE,,FALSE,,FALSE,,FALSE
-root.menu.example.app.label|icon,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,,FALSE,,FALSE,,FALSE
-root.menu.example.app.label|text,Beispiel Plugin,FALSE,Example Plugin,FALSE,Example Plugin,FALSE,Esimerkkilaajennus,FALSE,Exempel på plug-in,FALSE,,FALSE,,FALSE,,FALSE
-root.menu.example.app.label|tooltip,Beispiel Plugin,FALSE,Example Plugin,FALSE,Example Plugin,FALSE,Esimerkkilaajennus,FALSE,Exempel på plug-in,FALSE,,FALSE,,FALSE,,FALSE
-server.config.group.system.example.introduction,"Sammlung von Basiskonfigurationsfeldern, die in Plugins konfiguriert werden können",FALSE,Collection of fields for the base configuration which can be defined by plugins,FALSE,Collection of fields for the base configuration which can be defined by plugins,FALSE,"Kokoelma perusmäärityskenttiä, jotka voidaan määrittää laajennuksissa",FALSE,Samling av grundläggande konfigurationsfält som kan konfigureras i plugins,FALSE,,FALSE,,FALSE,,FALSE
-server.config.group.system.example.title,Beispiel Plugin,FALSE,Example Plugin,FALSE,Example Plugin,FALSE,Esimerkkilaajennus,FALSE,Exempel på plug-in,FALSE,,FALSE,,FALSE,,FALSE
+acl.right.manager.group.system.plugin.example-plugin.example,Beispiel Plugin,FALSE,Example Plugin,FALSE,Example Plugin,FALSE,Esimerkkilaajennus,FALSE,Exempel på plug-in,FALSE,Exemple de plugin,FALSE,,FALSE,,FALSE
+example.app.label,Beispiel App,FALSE,Example App,FALSE,Example App,FALSE,Esimerkkisovellus,FALSE,Exempel app,FALSE,Exemple d'application,FALSE,,FALSE,,FALSE
+example.asset.detail.360degrees|icon,fa-eye,FALSE,fa-eye,FALSE,fa-eye,FALSE,fa-eye,FALSE,fa-eye,FALSE,fa-eye,FALSE,,FALSE,,FALSE
+example.asset.detail.360degrees|text,360°,FALSE,360°,FALSE,360°,FALSE,360°,FALSE,360°,FALSE,360°,FALSE,,FALSE,,FALSE
+example.custom.data.type.config.option.mask.appearance.color.blue,Blau,FALSE,Blue,FALSE,Blue,FALSE,Sininen,FALSE,Blå,FALSE,Bleu,FALSE,,FALSE,,FALSE
+example.custom.data.type.config.option.mask.appearance.color.green,Grün,FALSE,Green,FALSE,Green,FALSE,Vihreä,FALSE,Grön,FALSE,Vert,FALSE,,FALSE,,FALSE
+example.custom.data.type.config.option.mask.appearance.color.red,Rot,FALSE,Red,FALSE,Red,FALSE,Punainen,FALSE,Röd,FALSE,Rouge,FALSE,,FALSE,,FALSE
+example.custom.data.type.config.parameter.mask.appearance.color.label,Farbe,FALSE,Color,FALSE,Color,FALSE,Väri,FALSE,Färg,FALSE,Couleur,FALSE,,FALSE,,FALSE
+example.custom.data.type.config.parameter.schema.range.from.label,Wert von,FALSE,Value from,FALSE,Value from,FALSE,Arvo mistä,FALSE,Värde från,FALSE,Valeur à partir de,FALSE,,FALSE,,FALSE
+example.custom.data.type.config.parameter.schema.range.to.label,Wert bis,FALSE,Value to,FALSE,Value to,FALSE,Arvo mihin,FALSE,Värde till,FALSE,Valeur à,FALSE,,FALSE,,FALSE
+example.custom.data.type.datamodel_info,Werte: %(from)s - %(to)s,FALSE,Values: %(from)s - %(to)s,FALSE,Values: %(from)s - %(to)s,FALSE,Arvot: %(from)s - %(to)s,FALSE,Värden: %(from)s - %(to)s,FALSE,Valeurs : %(from)s - %(to)s,FALSE,,FALSE,,FALSE
+example.custom.data.type.input.value,Wert,FALSE,Value,FALSE,Value,FALSE,Arvo,FALSE,Värde,FALSE,Valeur,FALSE,,FALSE,,FALSE
+example.custom.data.type.name,Beispiel Slider,FALSE,Example Slider,FALSE,Example Slider,FALSE,Esimerkkiliukusäädin,FALSE,Exempel skjutreglage,FALSE,Exemple de curseur,FALSE,,FALSE,,FALSE
+example.detail.sidebar.plugin.button|icon,fa-code,FALSE,fa-code,FALSE,fa-code,FALSE,fa-code,FALSE,fa-code,FALSE,fa-code,FALSE,,FALSE,,FALSE
+example.export.manager.form.with_tags.label,YML mit Tags exportieren,FALSE,Export YML with tags,FALSE,Export YML with tags,FALSE,Vie YML tunnisteilla,FALSE,Exportera YML med taggar,FALSE,Exporter en YML avec les balises,FALSE,,FALSE,,FALSE
+example.export.manager.form.with_tags.text,YML Datei mit Python-spezifischen Tags erzeugen,FALSE,Create YML file with python specific tags,FALSE,Create YML file with python specific tags,FALSE,Luo YML-tiedosto Python-kohtaisilla tunnisteilla,FALSE,Generera YML-fil med Python-specifika taggar,FALSE,Créer un fichier YML avec des balises spécifiques à Python,FALSE,,FALSE,,FALSE
+example.export.manager.plugin.name,Beispiel Export Plugin,FALSE,Example Export Plugin,FALSE,Example Export Plugin,FALSE,Esimerkki vientilaajennuksesta,FALSE,Exempel export plugin,FALSE,Exemple de plugin d'exportation,FALSE,,FALSE,,FALSE
+example.export.manager.form.type.label,Export Type,FALSE,Export Type,FALSE,Export Type,FALSE,Export Type,FALSE,Export Type,FALSE,Type d'exportation,FALSE,,FALSE,,FALSE
+example.mask.splitter.block.name,Beispiel Splitter (block),FALSE,Example Splitter (block),FALSE,Example Splitter (block),FALSE,Esimerkkijakaja (lohko),FALSE,Exempel på splitter (block),FALSE,Exemple de séparateur (bloc),FALSE,,FALSE,,FALSE
+example.mask.splitter.block.option.color,%(value)s,FALSE,%(value)s,FALSE,%(value)s,FALSE,%(value)s,FALSE,%(value)s,FALSE,%(value)s,FALSE,,FALSE,,FALSE
+example.mask.splitter.block.option.style,-,FALSE,-,FALSE,-,FALSE,-,FALSE,-,FALSE,-,FALSE,,FALSE,,FALSE
+example.mask.splitter.block.title|text,Block Splitter,FALSE,Block Splitter,FALSE,Block Splitter,FALSE,Lohkojakaja,FALSE,Block Splitter,FALSE,Séparateur de blocs,FALSE,,FALSE,,FALSE
+example.mask.splitter.simple.name,Beispiel Splitter (einfach),FALSE,Example Splitter (simple),FALSE,Example Splitter (simple),FALSE,Esimerkkijakaja (yksinkertainen),FALSE,Exempel på splitter (enkel),FALSE,Exemple de séparateur (simple),FALSE,,FALSE,,FALSE
+example.mask.splitter.simple.option.title,Titel: %(value)s,FALSE,Title: %(value)s,FALSE,Title: %(value)s,FALSE,Otsikko: %(value)s,FALSE,Titel: %(value)s,FALSE,Titre : %(value)s,FALSE,,FALSE,,FALSE
+example.mask.splitter.simple.title|text,Einfacher Splitter,FALSE,Simple Splitter,FALSE,Simple Splitter,FALSE,Yksinkertainen jakaja,FALSE,Enkel Splitter,FALSE,Séparateur simple,FALSE,,FALSE,,FALSE
+example.root.app.button.base_config|text,Basis Konfiguration,FALSE,Base Config,FALSE,Base Config,FALSE,Peruskokoonpano,FALSE,Baskonfiguration,FALSE,Configuration de base,FALSE,,FALSE,,FALSE
+example.root.app.button.server_config|text,Server API: config,FALSE,Server API: config,FALSE,Server API: config,FALSE,Palvelimen API: asetukset,FALSE,Server API: config,FALSE,API du serveur : configuration,FALSE,,FALSE,,FALSE
+example.root.app.button.server_echo|text,Server API: echo,FALSE,Server API: echo,FALSE,Server API: echo,FALSE,Palvelimen API: echo,FALSE,Server API: echo,FALSE,API du serveur : écho,FALSE,,FALSE,,FALSE
+example.root.app.button.server_instance|text,Server API: instance,FALSE,Server API: instance,FALSE,Server API: instance,FALSE,Palvelimen API: esiintymä,FALSE,Server API: instance,FALSE,API du serveur : instance,FALSE,,FALSE,,FALSE
+example.root.app.button.server_session|text,Server API: session,FALSE,Server API: session,FALSE,Server API: session,FALSE,Palvelimen API: istunto,FALSE,Server API: session,FALSE,API du serveur : session,FALSE,,FALSE,,FALSE
+example.root.app.button.server_tmp|text,Server API: tmp,FALSE,Server API: tmp,FALSE,Server API: tmp,FALSE,Palvelimen API: tmp,FALSE,Server API: tmp,FALSE,API du serveur : tmp,FALSE,,FALSE,,FALSE
+example.root.app.button.system_right|text,System Rechte,FALSE,System Rights,FALSE,System Rights,FALSE,Järjestelmäoikeudet,FALSE,Systemrättigheter,FALSE,Droits du système,FALSE,,FALSE,,FALSE
+example.tray.app.button|icon,fa-question,FALSE,fa-question,FALSE,fa-question,FALSE,fa-question,FALSE,fa-question,FALSE,fa-question,FALSE,,FALSE,,FALSE
+example.tray.app.button|tooltip,Klick mich!,FALSE,Click me,FALSE,Click me,FALSE,Klikkaa tästä!,FALSE,Klicka på mig!,FALSE,Cliquez-moi,FALSE,,FALSE,,FALSE
+example.tray.app.thank_you.md,Danke dass Sie **easydb** benutzen!,FALSE,Thanks for using **easydb**!,FALSE,Thanks for using **easydb**!,FALSE,Kiitos **easydb:n** käytöstä!,FALSE,Tack för att du använder **easydb**!,FALSE,Merci d'utiliser **easydb** !,FALSE,,FALSE,,FALSE
+pdf-creator.node.an-example-node.display-name,Example Node,FALSE,Example Node,FALSE,Example Node,FALSE,Esimerkkinoodi,FALSE,Exempel Nod,FALSE,Exemple de nœud,FALSE,,FALSE,,FALSE
+pdf-creator.node.an-example-node.settings.title,Title,FALSE,Title,FALSE,Title,FALSE,Otsikko,FALSE,Titel,FALSE,Titre,FALSE,,FALSE,,FALSE
+root.menu.example.app.label|icon,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,,FALSE,,FALSE
+root.menu.example.app.label|text,Beispiel Plugin,FALSE,Example Plugin,FALSE,Example Plugin,FALSE,Esimerkkilaajennus,FALSE,Exempel på plug-in,FALSE,Exemple de plugin,FALSE,,FALSE,,FALSE
+root.menu.example.app.label|tooltip,Beispiel Plugin,FALSE,Example Plugin,FALSE,Example Plugin,FALSE,Esimerkkilaajennus,FALSE,Exempel på plug-in,FALSE,Exemple de plugin,FALSE,,FALSE,,FALSE
+server.config.group.system.example.introduction,"Sammlung von Basiskonfigurationsfeldern, die in Plugins konfiguriert werden können",FALSE,Collection of fields for the base configuration which can be defined by plugins,FALSE,Collection of fields for the base configuration which can be defined by plugins,FALSE,"Kokoelma peruskokoonpanon kenttiä, jotka voidaan määrittää laajennuksissa",FALSE,Samling av grundläggande konfigurationsfält som kan konfigureras i plugins,FALSE,Collection de champs pour la configuration de base pouvant être définis par des plugins,FALSE,,FALSE,,FALSE
+server.config.group.system.example.title,Beispiel Plugin,FALSE,Example Plugin,FALSE,Example Plugin,FALSE,Esimerkkilaajennus,FALSE,Exempel på plug-in,FALSE,Exemple de plugin,FALSE,,FALSE,,FALSE
 "server.config.group.system.plugin_example-plugin.introduction
-",Einstellungen für das Example Plugin,FALSE,Settings for the example plugin,FALSE,Settings for the example plugin,FALSE,Esimerkkilaajennuksen asetukset,FALSE,Inställningar för exempel plugin,FALSE,,FALSE,,FALSE,,FALSE
-server.config.group.system.plugin_example-plugin.title,Example Plugin,FALSE,Example Plugin,FALSE,Example Plugin,FALSE,Esimerkkilaajennus,FALSE,Exempel på plug-in,FALSE,,FALSE,,FALSE,,FALSE
-server.config.name.system.example_plugin,Konfiguration,FALSE,Configuration,FALSE,Configuration,FALSE,Asetukset,FALSE,Konfiguration,FALSE,,FALSE,,FALSE,,FALSE
-server.config.option.system.example_plugin.select.apple,Option: Apfel,FALSE,Option: Apple,FALSE,Option: Apple,FALSE,Vaihtoehto: Omena,FALSE,Alternativ: äpple,FALSE,,FALSE,,FALSE,,FALSE
-server.config.option.system.example_plugin.select.banana,Option: Banane,FALSE,Option: Banana,FALSE,Option: Banana,FALSE,Vaihtoehto: Banaani,FALSE,Alternativ: banan,FALSE,,FALSE,,FALSE,,FALSE
-server.config.option.system.example_plugin.select.kiwi,Option: Kiwi,FALSE,Option: Kiwi,FALSE,Option: Kiwi,FALSE,Vaihtoehto: Kiivi,FALSE,Alternativ: kiwi,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.bool.checkbox,Ja/Nein,FALSE,Yes/No,FALSE,Yes/No,FALSE,Kyllä / Ei,FALSE,Ja/Nej,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.bool.label,Ja/Nein (Boolescher Wert),FALSE,Yes/No (Boolean),FALSE,Yes/No (Boolean),FALSE,Kyllä/Ei (looginen arvo),FALSE,Ja/Nej (Boolean),FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.bool.label|hint,`type: bool`,FALSE,`type: bool`,FALSE,`type: bool`,FALSE,`type: bool`,FALSE,`type: bool`,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.date.label,Datum + Zeit (Texteingabe oder Auswahl),FALSE,Date + Time (Text Input and Date Picker),FALSE,Date + Time (Text Input and Date Picker),FALSE,Päivämäärä + aika (tekstinsyöttö tai valinta),FALSE,Datum + tid (textinmatning eller val),FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.date.label|hint,`type: date`,FALSE,`type: date`,FALSE,`type: date`,FALSE,`type: date`,FALSE,`type: date`,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.easydb_group.label,Auswahl einer Gruppe,FALSE,Selection of a Group,FALSE,Selection of a Group,FALSE,Ryhmän valinta,FALSE,Val av grupp,FALSE,,FALSE,,FALSE,,FALSE
+",Einstellungen für das Example Plugin,FALSE,Settings for the example plugin,FALSE,Settings for the example plugin,FALSE,Esimerkkilaajennuksen asetukset,FALSE,Inställningar för exempel plugin,FALSE,Paramètres pour l'exemple de plugin,FALSE,,FALSE,,FALSE
+server.config.group.system.plugin_example-plugin.title,Example Plugin,FALSE,Example Plugin,FALSE,Example Plugin,FALSE,Esimerkkilaajennus,FALSE,Exempel på plug-in,FALSE,Exemple de plugin,FALSE,,FALSE,,FALSE
+server.config.name.system.example_plugin,Konfiguration,FALSE,Configuration,FALSE,Configuration,FALSE,Asetukset,FALSE,Konfiguration,FALSE,Configuration,FALSE,,FALSE,,FALSE
+server.config.option.system.example_plugin.select.apple,Option: Apfel,FALSE,Option: Apple,FALSE,Option: Apple,FALSE,Vaihtoehto: Omena,FALSE,Alternativ: äpple,FALSE,Option : Pomme,FALSE,,FALSE,,FALSE
+server.config.option.system.example_plugin.select.banana,Option: Banane,FALSE,Option: Banana,FALSE,Option: Banana,FALSE,Vaihtoehto: Banaani,FALSE,Alternativ: banan,FALSE,Option : Banane,FALSE,,FALSE,,FALSE
+server.config.option.system.example_plugin.select.kiwi,Option: Kiwi,FALSE,Option: Kiwi,FALSE,Option: Kiwi,FALSE,Vaihtoehto: Kiivi,FALSE,Alternativ: kiwi,FALSE,Option : Kiwi,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.bool.checkbox,Ja/Nein,FALSE,Yes/No,FALSE,Yes/No,FALSE,Kyllä / Ei,FALSE,Ja/Nej,FALSE,Oui Non,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.bool.label,Ja/Nein (Boolescher Wert),FALSE,Yes/No (Boolean),FALSE,Yes/No (Boolean),FALSE,Kyllä/Ei (looginen arvo),FALSE,Ja/Nej (Boolean),FALSE,Oui/Non (booléen),FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.bool.label|hint,`type: bool`,FALSE,`type: bool`,FALSE,`type: bool`,FALSE,`type: bool`,FALSE,`type: bool`,FALSE,`type : booléen`,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.date.label,Datum + Zeit (Texteingabe oder Auswahl),FALSE,Date + Time (Text Input and Date Picker),FALSE,Date + Time (Text Input and Date Picker),FALSE,Päivämäärä + aika (tekstinsyöttö tai valinta),FALSE,Datum + tid (textinmatning eller val),FALSE,Date + Heure (saisie de texte et sélecteur de date),FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.date.label|hint,`type: date`,FALSE,`type: date`,FALSE,`type: date`,FALSE,`type: date`,FALSE,`type: date`,FALSE,`type: date`,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.easydb_group.label,Auswahl einer Gruppe,FALSE,Selection of a Group,FALSE,Selection of a Group,FALSE,Ryhmän valinta,FALSE,Val av grupp,FALSE,Sélection d'un groupe,FALSE,,FALSE,,FALSE
 server.config.parameter.system.example_plugin.easydb_group.label|hint,"`type: int
 plugin_type: group_easydb_select`",FALSE,"`type: int
 plugin_type: group_easydb_select`",FALSE,"`type: int
-plugin_type: group_easydb_select`",FALSE,`type: int\nplugin_type: group_easydb_select`,FALSE,`type: int\nplugin_type: group_easydb_select`,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.email.label,Textfeld für Mailadressen,FALSE,Text field for email addresses,FALSE,Text field for email addresses,FALSE,Tekstikenttä sähköpostiosoitteita varten,FALSE,Textfält för e-postadresser,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.email.label|hint,`type: email`,FALSE,`type: email`,FALSE,`type: email`,FALSE,`type: email`,FALSE,`type: email`,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.example_base_config.label,"Komplexes Eingabefeld, dass durch eine Erweiterung der Basiskonfiguration durch das Plugin definiert wird",FALSE,Complex input field which is defined by a base configuration enhancement by the plugin,FALSE,Complex input field which is defined by a base configuration enhancement by the plugin,FALSE,"Syöttökenttä, joka määritetään laajentamalla peruskokoonpanoa laajennuksen avulla",FALSE,Komplext inmatningsfält som definieras av pluginet genom att utöka den grundläggande konfigurationen,FALSE,,FALSE,,FALSE,,FALSE
+plugin_type: group_easydb_select`",FALSE,"`type: int
+plugin_type: group_easydb_select`",FALSE,"`type: int
+plugin_type: group_easydb_select`",FALSE,"`type: int
+plugin_type: group_easydb_select`",FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.email.label,Textfeld für Mailadressen,FALSE,Text field for email addresses,FALSE,Text field for email addresses,FALSE,Tekstikenttä sähköpostiosoitteita varten,FALSE,Textfält för e-postadresser,FALSE,Champ de texte pour les adresses e-mail,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.email.label|hint,`type: email`,FALSE,`type: email`,FALSE,`type: email`,FALSE,`type: email`,FALSE,`type: email`,FALSE,`type : courriel`,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.example_base_config.label,"Komplexes Eingabefeld, dass durch eine Erweiterung der Basiskonfiguration durch das Plugin definiert wird",FALSE,Complex input field which is defined by a base configuration enhancement by the plugin,FALSE,Complex input field which is defined by a base configuration enhancement by the plugin,FALSE,"Syöttökenttä, joka määritetään laajentamalla peruskokoonpanoa laajennuksen avulla",FALSE,Komplext inmatningsfält som definieras av pluginet genom att utöka den grundläggande konfigurationen,FALSE,Champ de saisie complexe défini par une amélioration de la configuration de base par le plugin,FALSE,,FALSE,,FALSE
 server.config.parameter.system.example_plugin.example_base_config.label|hint,"`type: text
 plugin_type: example-base-config
 store_as_json: true`",FALSE,"`type: text
 plugin_type: example-base-config
 store_as_json: true`",FALSE,"`type: text
 plugin_type: example-base-config
-store_as_json: true`",FALSE,`type: text\nplugin_type: example-base-config\nstore_as_json: true`,FALSE,`type: text\nplugin_type: example-base-config\nstore_as_json: true`,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.int.label,Zahlenfeld,FALSE,Number,FALSE,Number,FALSE,Numero,FALSE,Nummer,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.int.label|hint,`type: int`,FALSE,`type: int`,FALSE,`type: int`,FALSE,`type: int`,FALSE,`type: int`,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.profile_mapping.label,Auswahl eines Metadatenmappings,FALSE,Selection of a Metadata Mapping,FALSE,Selection of a Metadata Mapping,FALSE,Metatietokartoituksen valinta,FALSE,Val av en metadatamappning,FALSE,,FALSE,,FALSE,,FALSE
+store_as_json: true`",FALSE,"`type: text
+plugin_type: example-base-config
+store_as_json: true`",FALSE,"`type: text
+plugin_type: example-base-config
+store_as_json: true`",FALSE,"`type: text
+plugin_type: example-base-config
+store_as_json: true`",FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.int.label,Zahlenfeld,FALSE,Number,FALSE,Number,FALSE,Numero,FALSE,Nummer,FALSE,Nombre,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.int.label|hint,`type: int`,FALSE,`type: int`,FALSE,`type: int`,FALSE,`type: int`,FALSE,`type: int`,FALSE,`type: int`,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.profile_mapping.label,Auswahl eines Metadatenmappings,FALSE,Selection of a Metadata Mapping,FALSE,Selection of a Metadata Mapping,FALSE,Metatietokartoituksen valinta,FALSE,Val av en metadatamappning,FALSE,Sélection d'un mappage de métadonnées,FALSE,,FALSE,,FALSE
 server.config.parameter.system.example_plugin.profile_mapping.label|hint,"`type: int
-plugin_type: profile_mapping_select`",FALSE,Enhancement defined by the plugin,FALSE,Enhancement defined by the plugin,FALSE,`type: int\nplugin_type: profile_mapping_select`,FALSE,Förbättring definierad av pluginen,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.select.label,Dropdown Menü (Select),FALSE,Dropdown Menu (Select),FALSE,Dropdown Menu (Select),FALSE,Alasvetovalikko (Valitse),FALSE,Rullgardinsmeny (Select),FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.select.label|hint,`type: select`,FALSE,`type: select`,FALSE,`type: select`,FALSE,`type: select`,FALSE,`type: select`,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.string_list_sort.label,Sortierbare Liste von Strings,FALSE,Sortable list of strings,FALSE,Sortable list of strings,FALSE,Lajiteltava merkkijonoluettelo,FALSE,Sorterbar lista med strängar,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.string_list_sort.label|hint,`type: string-list-sort`,FALSE,`type: string-list-sort`,FALSE,`type: string-list-sort`,FALSE,`type: string-list-sort`,FALSE,`type: string-list-sort`,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.string_list.label,Ungeordnete Liste von Strings,FALSE,Unsorted list of strings,FALSE,Unsorted list of strings,FALSE,Järjestämätön merkkijonoluettelo,FALSE,Osorterad lista med strängar,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.string_list.label|hint,`type: string-list`,FALSE,`type: string-list`,FALSE,`type: string-list`,FALSE,`type: string-list`,FALSE,`type: string-list`,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.tag_select.label,Auswahl von Tags,FALSE,Selection of Tags,FALSE,Selection of Tags,FALSE,Tunnisteiden valinta,FALSE,Val av taggar,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.tag_select.label|hint,`type: tag-select`,FALSE,`type: tag-select`,FALSE,`type: tag-select`,FALSE,`type: tag select`,FALSE,`type: tag select`,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.tagfilter_select.label,Tagfilter,FALSE,Tagfilter,FALSE,Tagfilter,FALSE,Tunnistesuodatin,FALSE,Taggfilter,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.tagfilter_select.label|hint,`type: tagfilter-select`,FALSE,`type: tagfilter-select`,FALSE,`type: tagfilter-select`,FALSE,`type: tagfilter-select`,FALSE,`type: tagfilter-select`,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.text_l10n_multi.label,Mehrzeiliger mehrsprachiger Text,FALSE,Multilanguage multiline Text,FALSE,Multilanguage multiline Text,FALSE,Monirivinen monikielinen teksti,FALSE,Flerradig flerspråkig text,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.text_l10n_multi.label|hint,`type: text-l10n-multiline`,FALSE,`type: text-l10n-multiline`,FALSE,`type: text-l10n-multiline`,FALSE,`type: text-l10n-multiline`,FALSE,`type: text-l10n-multiline`,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.text_l10n.label,Mehrsprachiger Text,FALSE,Multilanguage Text,FALSE,Multilanguage Text,FALSE,Monikielinen teksti,FALSE,Flerspråkig text,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.text_l10n.label|hint,`type: text-l10n`,FALSE,`type: text-l10n`,FALSE,`type: text-l10n`,FALSE,`type: text-l10n`,FALSE,`type: text-l10n`,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.text_multi.label,Mehrzeiliger Text,FALSE,Multiline Text,FALSE,Multiline Text,FALSE,Monirivinen teksti,FALSE,Flerradig text,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.text_multi.label|hint,`type: text-multiline`,FALSE,`type: text-multiline`,FALSE,`type: text-multiline`,FALSE,`type: text-multiline`,FALSE,`type: text-multiline`,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.text.label,Einzeiliger Text,FALSE,Oneline Text,FALSE,Oneline Text,FALSE,Yksirivinen teksti,FALSE,En rad text,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.text.label|hint,`type: text`,FALSE,`type: text`,FALSE,`type: text`,FALSE,`type: text`,FALSE,`type: text`,FALSE,,FALSE,,FALSE,,FALSE
-server.config.parameter.system.example_plugin.webhook_secret.label,Secret für einen Webhook,FALSE,Secret for a Webhook,FALSE,Secret for a Webhook,FALSE,Webhookin salaisuus,FALSE,Hemlighet för en webhook,FALSE,,FALSE,,FALSE,,FALSE
-server.right.system.plugin.example-plugin.example,Sichtbar,FALSE,Visible,FALSE,Visible,FALSE,Näkyvissä,FALSE,Synlig,FALSE,,FALSE,,FALSE,,FALSE
-type.extension.custom.settings.config.parameter.base.ex_text_online.ex_1.label,Mehr Info?,FALSE,More Info?,FALSE,More Info?,FALSE,Lisätietoja?,FALSE,Mer information?,FALSE,,FALSE,,FALSE,,FALSE
-Examplefilepicker.filepicker.badge|text,Example Filepicker,TRUE,Example Filepicker,TRUE,Example Filepicker,TRUE,Example Filepicker,TRUE,Example Filepicker,TRUE,Example Filepicker,TRUE,,FALSE,,FALSE
-tool.collection.selection.Examplefilepicker.download|text,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,,FALSE,,FALSE
+plugin_type: profile_mapping_select`",FALSE,Enhancement defined by the plugin,FALSE,Enhancement defined by the plugin,FALSE,"`type: int
+plugin_type: profile_mapping_select`",FALSE,Förbättring definierad av pluginen,FALSE,Amélioration définie par le plugin,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.select.label,Dropdown Menü (Select),FALSE,Dropdown Menu (Select),FALSE,Dropdown Menu (Select),FALSE,Alasvetovalikko (Valitse),FALSE,Rullgardinsmeny (Select),FALSE,Menu déroulant (Sélectionner),FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.select.label|hint,`type: select`,FALSE,`type: select`,FALSE,`type: select`,FALSE,`type: select`,FALSE,`type: select`,FALSE,`type : sélectionner`,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.string_list_sort.label,Sortierbare Liste von Strings,FALSE,Sortable list of strings,FALSE,Sortable list of strings,FALSE,Lajiteltava merkkijonoluettelo,FALSE,Sorterbar lista med strängar,FALSE,Liste triable de chaînes,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.string_list_sort.label|hint,`type: string-list-sort`,FALSE,`type: string-list-sort`,FALSE,`type: string-list-sort`,FALSE,`type: string-list-sort`,FALSE,`type: string-list-sort`,FALSE,`type : chaîne-liste-tri`,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.string_list.label,Ungeordnete Liste von Strings,FALSE,Unsorted list of strings,FALSE,Unsorted list of strings,FALSE,Järjestämätön merkkijonoluettelo,FALSE,Osorterad lista med strängar,FALSE,Liste de chaînes non triée,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.string_list.label|hint,`type: string-list`,FALSE,`type: string-list`,FALSE,`type: string-list`,FALSE,`type: string-list`,FALSE,`type: string-list`,FALSE,`type : liste de chaînes`,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.tag_select.label,Auswahl von Tags,FALSE,Selection of Tags,FALSE,Selection of Tags,FALSE,Tunnisteiden valinta,FALSE,Val av taggar,FALSE,Sélection de balises,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.tag_select.label|hint,`type: tag-select`,FALSE,`type: tag-select`,FALSE,`type: tag-select`,FALSE,`type: tag select`,FALSE,`type: tag select`,FALSE,`type : sélection de balise`,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.tagfilter_select.label,Tagfilter,FALSE,Tagfilter,FALSE,Tagfilter,FALSE,Tunnistesuodatin,FALSE,Taggfilter,FALSE,Filtre de balises,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.tagfilter_select.label|hint,`type: tagfilter-select`,FALSE,`type: tagfilter-select`,FALSE,`type: tagfilter-select`,FALSE,`type: tagfilter-select`,FALSE,`type: tagfilter-select`,FALSE,`type : tagfilter-select`,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.text_l10n_multi.label,Mehrzeiliger mehrsprachiger Text,FALSE,Multilanguage multiline Text,FALSE,Multilanguage multiline Text,FALSE,Monirivinen monikielinen teksti,FALSE,Flerradig flerspråkig text,FALSE,Texte multiligne multilingue,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.text_l10n_multi.label|hint,`type: text-l10n-multiline`,FALSE,`type: text-l10n-multiline`,FALSE,`type: text-l10n-multiline`,FALSE,`type: text-l10n-multiline`,FALSE,`type: text-l10n-multiline`,FALSE,`type : texte-l10n-multiligne`,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.text_l10n.label,Mehrsprachiger Text,FALSE,Multilanguage Text,FALSE,Multilanguage Text,FALSE,Monikielinen teksti,FALSE,Flerspråkig text,FALSE,Texte multilingue,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.text_l10n.label|hint,`type: text-l10n`,FALSE,`type: text-l10n`,FALSE,`type: text-l10n`,FALSE,`type: text-l10n`,FALSE,`type: text-l10n`,FALSE,`tapez : texte-l10n`,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.text_multi.label,Mehrzeiliger Text,FALSE,Multiline Text,FALSE,Multiline Text,FALSE,Monirivinen teksti,FALSE,Flerradig text,FALSE,Texte multiligne,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.text_multi.label|hint,`type: text-multiline`,FALSE,`type: text-multiline`,FALSE,`type: text-multiline`,FALSE,`type: text-multiline`,FALSE,`type: text-multiline`,FALSE,`type : texte-multiligne`,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.text.label,Einzeiliger Text,FALSE,Oneline Text,FALSE,Oneline Text,FALSE,Yksirivinen teksti,FALSE,En rad text,FALSE,Texte en ligne,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.text.label|hint,`type: text`,FALSE,`type: text`,FALSE,`type: text`,FALSE,`type: text`,FALSE,`type: text`,FALSE,`type : texte`,FALSE,,FALSE,,FALSE
+server.config.parameter.system.example_plugin.webhook_secret.label,Secret für einen Webhook,FALSE,Secret for a Webhook,FALSE,Secret for a Webhook,FALSE,Webhookin salaisuus,FALSE,Hemlighet för en webhook,FALSE,Secret pour un webhook,FALSE,,FALSE,,FALSE
+server.right.system.plugin.example-plugin.example,Sichtbar,FALSE,Visible,FALSE,Visible,FALSE,Näkyvissä,FALSE,Synlig,FALSE,Visible,FALSE,,FALSE,,FALSE
+type.extension.custom.settings.config.parameter.base.ex_text_online.ex_1.label,Mehr Info?,FALSE,More Info?,FALSE,More Info?,FALSE,Lisätietoja?,FALSE,Mer information?,FALSE,Plus d'informations?,FALSE,,FALSE,,FALSE
+Examplefilepicker.filepicker.badge|text,Example Filepicker,TRUE,Example Filepicker,TRUE,Example Filepicker,TRUE,Example Filepicker,TRUE,Exempel på Filepicker,TRUE,Example Filepicker,TRUE,,FALSE,,FALSE
+tool.collection.selection.Examplefilepicker.download|text,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Skicka till exempelserver,TRUE,Send to Example Server,TRUE,,FALSE,,FALSE
 tool.collection.selection.Examplefilepicker.download|icon,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,,FALSE,,FALSE
-tool.collection.selection.Examplefilepicker.download|favorite,Send to Example Server,TRUE,Example Server,TRUE,Example Server,TRUE,Example Server,TRUE,Example Server,TRUE,Example Server,FALSE,,FALSE,,FALSE
-tool.object.Examplefilepicker.download|text,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,,FALSE,,FALSE
+tool.collection.selection.Examplefilepicker.download|favorite,Send to Example Server,TRUE,Example Server,TRUE,Example Server,TRUE,Example Server,TRUE,Exempelserver,TRUE,Example Server,FALSE,,FALSE,,FALSE
+tool.object.Examplefilepicker.download|text,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Skicka till exempelserver,TRUE,Send to Example Server,TRUE,,FALSE,,FALSE
 tool.object.Examplefilepicker.download|icon,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,,FALSE,,FALSE
-tool.object.Examplefilepicker.download|favorite,Example Server,TRUE,Example Server,TRUE,Example Server,TRUE,Example Server,TRUE,Example Server,TRUE,Example Server,TRUE,,FALSE,,FALSE
-Examplefilepicker.download.manager.modal.title,Example Server Exporter,TRUE,Example Server Exporter,TRUE,Example Server Exporter,TRUE,Example Server Exporter,TRUE,Example Server Exporter,TRUE,Example Server Exporter,TRUE,,FALSE,,FALSE
-Examplefilepicker.download.manager.modal.button.start|text,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,,FALSE,,FALSE
+tool.object.Examplefilepicker.download|favorite,Example Server,TRUE,Example Server,TRUE,Example Server,TRUE,Example Server,TRUE,Exempelserver,TRUE,Example Server,TRUE,,FALSE,,FALSE
+Examplefilepicker.download.manager.modal.title,Example Server Exporter,TRUE,Example Server Exporter,TRUE,Example Server Exporter,TRUE,Example Server Exporter,TRUE,Exempelserver exportör,TRUE,Example Server Exporter,TRUE,,FALSE,,FALSE
+Examplefilepicker.download.manager.modal.button.start|text,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Send to Example Server,TRUE,Skicka till exempelserver,TRUE,Send to Example Server,TRUE,,FALSE,,FALSE
 Examplefilepicker.download.manager.modal.button.start|icon,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,fa-bath,FALSE,,FALSE,,FALSE
-Examplefilepicker.download.manager.prepare.error,Es konnte keine passende Datei für die Übernahme nach Example Server gefunden werden.,TRUE,No matching file could be found for the transfer to Example Server.,TRUE,No matching file could be found for the transfer to Example Server.,TRUE,No matching file could be found for the transfer to Example Server.,TRUE,No matching file could be found for the transfer to Example Server.,TRUE,No matching file could be found for the transfer to Example Server.,TRUE,,FALSE,,FALSE
-Examplefilepicker.download.manager.report.upload_success.md,%(success)s Datei(en) erfolgreich an TYPO3 übertragen.,TRUE,%(success)s file(s) successfully transferred to Example Server.,TRUE,%(success)s file(s) successfully transferred to Example Server.,TRUE,%(success)s file(s) successfully transferred to Example Server.,TRUE,%(success)s file(s) successfully transferred to Example Server.,TRUE,%(success)s file(s) successfully transferred to Example Server.,TRUE,%(success)s file(s) successfully transferred to Example Server.,FALSE,,FALSE
+Examplefilepicker.download.manager.prepare.error,Es konnte keine passende Datei für die Übernahme nach Example Server gefunden werden.,TRUE,No matching file could be found for the transfer to Example Server.,TRUE,No matching file could be found for the transfer to Example Server.,TRUE,No matching file could be found for the transfer to Example Server.,TRUE,Ingen matchande fil kunde hittas för överföringen till exempelservern.,TRUE,No matching file could be found for the transfer to Example Server.,TRUE,,FALSE,,FALSE
+Examplefilepicker.download.manager.report.upload_success.md,%(success)s Datei(en) erfolgreich an TYPO3 übertragen.,TRUE,%(success)s file(s) successfully transferred to Example Server.,TRUE,%(success)s file(s) successfully transferred to Example Server.,TRUE,%(success)s file(s) successfully transferred to Example Server.,TRUE,%(success)s fil(er) har överförts till exempelservern.,TRUE,%(success)s file(s) successfully transferred to Example Server.,TRUE,%(success)s file(s) successfully transferred to Example Server.,FALSE,,FALSE
 ,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE
 ,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE
 ,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE,,FALSE
