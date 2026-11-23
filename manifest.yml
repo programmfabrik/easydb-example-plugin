@@ -62,6 +62,10 @@ custom_types:
 base_config:
   - name: example_plugin
     group: example
+    # set this flag to hide this base config block in anauthorized requests.
+    # authorized users (webfrontend, api users) and the internal plugin callback can read the values.
+    # Use the flag to hide sensitive data like login credentials, api keys, or like in this example the webhook secret.
+    require_system_right: system.config
     parameters:
       text:
         type: text
